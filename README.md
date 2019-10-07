@@ -45,13 +45,21 @@ Este documento pretende ser un bosquejo de los temas que se deben cubrir para la
 		* Representación gráfica
 
 	* **Inferencia para cadenas de Markov ocultas.** 
-		* Problemas de interés para hacer inferencia:
+		* Problemas de interés para hacer inferencia (definición del problema y forma de modelarlo para su resolución algorítmica):
 			* Evaluación:  forward y backward algorithm basado en relaciones de recurrencia.	
 			* Explicación: 
 				* Filtering (algoritmos de alfa y beta recursion)
 				* Prediction
 				* Smoothing
 				* Likelihood
-				* Decoding/Most likely state path y el algoritmo de Viterbi
-				
+				* Decoding/Most likely state path/maximum a posteriori y el algoritmo de Viterbi
+				* **Nota:** 1) en las dos notas se presentan los algoritmos a manera de pseudo código o indicaciones, 2) para filtering, smooting y Most likely state path/maximum a posteriori las notas de Caron presentan simulaciones numéricas en R para el problema de una rana y sensores en una escalera; 3) las notas de Frazzoli incluyen un ejemplo *muy sencillo* para filtering, smoothing y decoding en el problema del topo (whack-to-mole) comparando además los resultados para estos; 4) deberíamos incluir algo de simulaciones numéricas también en la presentación?  
 
+2. **Modelos de estados continuos para cadenas de Markov ocultas:** (**Nota:** solo se aborda en las notas de Caron)
+	* Sistemas lineales gausianos:
+		* Repaso de conceptos de distribuciones normales multivariadas y sus condicionales
+		* **Modelos dinámicos lineales de espacios de estados gausianos**
+		* **Inferencia para modelos dináminos lineales de espacios de estados gausianos**
+			* Kallman filters (generalizaciones de los métodos para espacios discretos)
+			*  Kallman smoothers (generalizaciones de los métodos para espacios discretos)
+			* **Notas:** 1) se presentan ejemplos numéricos en R para kallman filters y smoothers; 2) nosotros también deberíamos de incluirlos?
