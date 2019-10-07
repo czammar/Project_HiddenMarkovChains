@@ -1,6 +1,6 @@
 # Fundamentos de estadística
 
-6 de octubre de 2019
+XXX de octubre de 2019
 
 ### Introducción
 

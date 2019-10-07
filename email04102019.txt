@@ -1,0 +1,34 @@
+Dear Marco Julio, Cesar, Nicolas and Sebastian
+
+You have been assigned to give a talk on the "Markov Model and Hidden Markov Model". Here are two good refs you shall use:
+
+
+http://www.stats.ox.ac.uk/~caron/teaching/sb1b/lecturehmm.pdf
+
+https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-410-principles-of-autonomy-and-decision-making-fall-2010/lecture-notes/MIT16_410F10_lec20.pdf
+
+Feel free to use other refs, but you must cover the material in these two lectures.
+
+
+Some quick points regarding your project:
+
+ 
+
+1- This is teamwork so you both will get the same mark. Do your best! In other words, I will evaluate your team, not individuals.
+
+ 
+
+2- You have almost 1 hr and 10 mins to give your talk. It is up to you to split the work between yourselves. All must give a talk and knows all the materials.
+
+
+NOV. 07 @ 16:00-17:10
+
+ 
+
+Please send your presentation (in the Beamer or the PowerPoint) to me a couple of days, before your presentation. 
+
+ 
+
+Best,
+
+Nasser
