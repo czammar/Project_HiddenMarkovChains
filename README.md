@@ -23,7 +23,7 @@ Este documento pretende ser un bosquejo de los temas que se deben cubrir para la
 	* Caron muestra unejemplo de clasificar palabras de un texto por *tags* de tipo de función dentro de oraciones (pronombre, articulos, verbos, etc). También introduce ejemplos breves de posicionamiento de un robot y secuenciación genética.
 	* Frazzoli se va aun más atrás e inicia hablando de cadenas de markov para modelar el juevo de golpear al topo (whack-to-mole). La introducción a cadenas de Markov ocultas (slide 10) la motiva haciendo alusión a una aplicación con sensores ruidosos de una variable donde el estado es desconocido.
 	
-2. **Modelos Discretos de Markov ocultos:** (**Nota:** en ambos casos los autores abordan primero los casos discretos y posteriormente hablan de los casos continuos y sus generalizaciones; creo que deberiamos seguir ese enfoque)
+2. **Modelos Discretos de Markov ocultos:** (**Nota:** en ambos casos los autores abordan primero los casos discretos, pero solo Caron habla posteriormente sobre un caso continuo y las generalizaciones de los métodos que presento para lo discreto; creo que deberiamos seguir ese enfoque)
 	* **Recordatorio del concepto de cadenas de Markov en el caso discreto e introducción de notaciones.** *Nota:* La notación de Caron es más general que la de Frazzoli, que introduce notación específica del caso discreto, pienso que deberíamos seguir la primera:
 		* Propiedad de Markov:
 		$$P(X_{t+1} =x_{t+1}| X_T=x_t, ..., X_0=x_0)  = P(X_{t+1} =x_{t+1}| X_T=x_t) $$
