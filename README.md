@@ -10,7 +10,7 @@ Este documento pretende ser un bosquejo de los temas que se deben cubrir para la
 
 * **Indicaciones de Nasser**
 	* **Formato:** Se debe exponer el tema en un presentación de Beamer (LaTeX) o PowerPoint. *Nota:* LaTex permite escribir ecuaciones matemáticas de manera sencilla; entiendo que Sebastían y yo estamos familiarizados con su uso.
-	* La presentación se debe enviar al profesor con algunos días de anticipación (no se especificar; sugiero que sea al menos una semana antes, es decir máximo a 31 de octubre, para lidiar con imprevistos)
+	* La presentación se debe enviar al profesor con algunos días de anticipación (no se especifica cuando; sugiero que sea al menos una semana antes, es decir máximo a 31 de octubre, para lidiar con imprevistos)
 	*  **Fecha de exposición:** 7 de Noviembre de 2019
 
 * **Lecturas:**
