@@ -1,0 +1,450 @@
+\documentclass[xcolor=dvipsnames, compress]{beamer}
+%\usetheme{Madrid} % My favorite!
+%\usetheme{Boadilla} % Pretty neat, soft color.
+%\usetheme{Warsaw}
+%\usecolortheme{dove} 
+\usetheme[secheader]{Boadilla}
+% \useoutertheme[subsection=false]{smoothbars}
+% \useinnertheme{rectangles}
+% \usetheme{Marburg}
+   \usecolortheme[RGB={139,10,80}]{structure}
+%  \usecolortheme[RGB={25,25,112}]{structure}
+%\usecolortheme[RGB={255,127,36}]{structure}
+% \usetheme{CambridgeUS}
+%\usetheme{PaloAlto}
+% \usefonttheme{professionalfonts}
+% \usepackage{listings}
+
+\usetheme{Boadilla}
+
+% \usetheme{Warsaw}
+%\usetheme{Darmstadt} %OK!
+%  \usetheme{Frankfurt} %OK!
+% \usetheme{Goettingen}
+% \usetheme{Dresden}
+%\usetheme{JuanLesPins} %OK!!
+%\usetheme{Marburg}
+%  \usetheme{Montpellier}
+% \usetheme{Rochester} %sobrio
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Luebeck}
+
+%\usetheme{Hannover}
+%\usecolortheme{wolverine}
+
+%\usecolortheme{albatross}
+%\usecolortheme{seahorse}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove} %<- este con orchid
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{whale}
+
+%\usetheme{Bergen} % This template has nagivation on the left
+%\usetheme{Frankfurt} % Similar to the default 
+%with an extra region at the top.
+%\usecolortheme{seahorse} % Simple and clean template
+%\usetheme{Darmstadt} % not so good
+% Uncomment the following line if you want %
+% page numbers and using Warsaw theme%
+% \setbeamertemplate{footline}[page number]
+%\setbeamercovered{transparent}
+%\setbeamercovered{invisible}
+% To remove the navigation symbols from 
+% the bottom of slides%
+%\setbeamertemplate{navigation symbols}{} 
+%
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath,amscd}
+\usepackage{latexsym,xspace}
+\usepackage[utf8]{inputenc}
+\usepackage{epsfig}
+%\usepackage{fancyhdr}
+%\usepackage[spanish]{babel}
+\usepackage[all]{xy}
+\usepackage{enumerate}
+\usepackage{eucal}
+%\usepackage[usenames]{color}
+
+\usepackage{mathtools} % flechas con nombres arriba o abajo
+
+%#########################
+\newcommand{\tx}{\ensuremath{\tau(X)}}
+\newcommand{\txx}{\ensuremath{\tau_{X}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\A}{\ensuremath{\forall}}
+\newcommand{\E}{\ensuremath{\exists}}
+\newcommand{\iso}{\ensuremath{\cong}}
+\newcommand{\union}{\ensuremath{\cup}}
+%\newcommand{\morinyec}{\ensuremath{\precapprox}}
+%\newenvironment{prueba}{\vspace{-3mm}\noindent\textbf{Demostraci\'on}\\}{\noindent$\blacksquare$\\}
+\newcommand{\nin}{\ensuremath{\notin}}
+\renewcommand{\emptyset}{\varnothing}
+
+%\newcommand{\niso}{\ensuremath{\not \cong}}
+\newtheorem{teor}{Teorema}[section]
+\newtheorem{defi}{Definition}[section]
+\newtheorem{ejemplo}{Examples}[section]
+\newtheorem{obs}{Remark}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{ntc}{Notation}[section]
+\newtheorem{lema}{Lemma}[section]
+\newtheorem{prob}{Problem}
+\newtheorem{comen}{Comment}
+
+%\usepackage{bm}         % For typesetting bold math (not \mathbold)
+%\logo{\includegraphics[height=0.6cm]{yourlogo.eps}}
+%
+\title[Hidden Markov Chains]{Hidden Markov Chains}
+\author{Marco Julio, Nicolás, Sebastián and César}
+\institute[ITAM]
+%\date{November 7, 2019}
+% \today will show current date. 
+% Alternatively, you can specify a date.
+%
+
+
+\begin{document}
+%
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Index}
+ \tableofcontents%[sections]
+\end{frame}
+
+\begin{frame}
+\section{Continuous-state Hidden Markov Models}
+\frametitle{Continuous-state Hidden Markov Models}
+
+In many problems often hidden parameters of interest are continuous. 
+
+\begin{figure}
+	\includegraphics[scale=0.45]{gps_cut.png}
+	\caption{GPS object tracking; hidden parameters: position + velocity}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Continuous-state Hidden Markov Models}
+\begin{itemize}	
+
+	\item Ideas developed for discrete case can be generalized to aboard problems with hidden continuous parameters of interest.\vspace{0.5cm}
+	\item We call these \textbf{Continuous-state Hidden Markov Models} (CS-HMM), also named as state-space models or dynamical systems.\vspace{0.5cm}
+	\item Let's focus on a particular subset of CS-HMM: \textbf{linear Gaussian state-space model} (LGSSM).
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Linear Gaussian state-space model (LGSSM)}
+
+\textbf{Hidden states:} $(X_0, \ldots, X_T)$ continuous r.v. taking values in $\R^{d_x}$
+
+\textbf{Observations:} $(Y_1, \ldots, Y_T)$ continuous r.v. taking values in $\R^{d_y}$\vspace{0.5cm}
+
+$(X_0, \ldots, X_T, Y_1, \ldots, Y_T)$ is LGSSM if has two components such as: 
+
+\begin{itemize}
+\item \textbf{state model:} $X_{t}$ is a linear transformation of $X_{t-1}$ plus a linear combination of Gaussian noise.\vspace{0.5cm}
+
+\item \textbf{observation model:} $Y_{t}$ is a linear transformation of $X_{t}$ plus Gaussian noise.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Linear Gaussian state-space model (LGSSM)}
+\begin{defi}[LGSSM - State model]
+
+\begin{equation}
+X_t = F_t X_{t-1} + G_t V_t \mbox{ for } t=1, \ldots, T \mbox{ State model }
+\end{equation}
+
+\end{defi}
+
+\begin{itemize}
+	\item $X_t \in  \R^{d_x}$ hidden state at time $t$,
+	\item $F_t \in  \R^{d_x \times d_x}$ transition state matrix at time $t$,
+	\item $G_t \in  \R^{d_x \times d_v}$ noise transfer matrix,
+	\item $V_t \in  \R^{d_v}$ state noise matrix, $V_t \sim \mathcal{N}(0,Q_t)$.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Linear Gaussian state-space model (LGSSM)}
+
+\begin{defi}[Observation model]
+	\begin{equation}
+	Y_t = H_t X_{t} + W_t \mbox{ for } t=1, \ldots, T \hspace{1cm}  \mbox{ Observation model }
+	\end{equation}
+	
+\end{defi}
+
+\begin{itemize}
+	\item $Y_t \in  \R^{d_y}$ observation at time $t$,
+	\item $H_t \in  \R^{d_x \times d_x}$ observation matrix at time $t$,
+	\item $W_t \in  \R^{d_v}$ observation noise, $W_t \sim \mathcal{N}(0,R_t)$.
+\end{itemize}
+
+\begin{defi}[Other conditions]
+	\begin{itemize}
+		\item $X_0\sim \mathcal{N}(\mu_0,\Sigma_0)$,
+		\item $V_t \sim \mathcal{N}(0,Q_t), W_t \sim \mathcal{N}(0,R_t)$, for $t=1,\ldots T$,
+		\item $X_0, V_1, \ldots V_T, W _1, \ldots W_T$  are independent.
+	\end{itemize}
+\end{defi}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{LGSSM and parametrization of joint pdf}
+
+As in discrete case, joint pdf of hidden variables and observation can be described as:
+\begin{equation}
+p(X_{0:T}, Y_{1:T}) = \prod_{t=1}^T p(y_t|x_t) \cdot p(x_{t-1}|x_t)
+\end{equation}
+
+Using \textbf{LGSSM structure} and \textbf{properties of multivariate normal distributions} it can be shown that if $G_t Q_T G_T\in \R^{d_x \times d_x}$ has full rank then:
+
+\begin{equation}
+p(y_t|x_t) = \mathcal{N}(H_t x_{t}, R_t)
+\end{equation}
+
+%\begin{equation}
+%p(x_t|x_{t-1}) = \mathcal{N}(x_t; H_t x_{t}, R_t)
+%\end{equation}
+
+\begin{equation}
+p(x_t|x_{t-1}) = \mathcal{N}(F_t x_{t-1}, G_t Q_T G_T)
+\end{equation}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Inference in dynamic LGSSM}
+
+Let's consider the following inference problem:
+
+\textbf{P1:} Given \textbf{observations up to time} $t$ find $Y_1=y_1, \ldots, Y_t=y_t$, find joint pdf $p(x_t|y_{1:t})$.\vspace{0.5cm}
+
+\textbf{P2:} Given \textbf{all observations} $Y_1=y_1, \ldots, Y_T=y_T$, find joint pdf $p(x_t|y_{1:T})$\vspace{0.5cm}
+
+Both can be solve by \textbf{sequentially computation of means  and  covariance  matrices of conditionally distributions}: 1)  P1 is called \textbf{Kallman filter}, and in 2) P2 is named \textbf{Kallman smoother}.
+\end{frame}
+
+\begin{frame}
+\frametitle{Inference LGSSM - Kallman filter}
+
+\textbf{P1:} Determine $p(x_t|y_{1:t})$ of the hidden state $X_t$ given $t$ observations $y_{1:t}$. 
+
+\begin{equation}
+\mu_{t|t-1}:= E[X_t | Y_{1:t} = y_{1:t-1} ]
+\end{equation}
+
+\begin{equation}
+\mu_{t|t}:= E[X_t | Y_{1:t} = y_{1:t} ]
+\end{equation}
+
+\begin{equation}
+\Sigma_{t|t-1}:= E[(X_t -\mu_{t|t-1}) (X_t -\mu_{t|t-1})^T | Y_{1:t} = y_{1:t-1} ]
+\end{equation}
+
+\begin{equation}
+\Sigma_{t|t}:= E[(X_t -\mu_{t|t}) (X_t -\mu_{t|t})^T | Y_{1:t} = y_{1:t} ]
+\end{equation}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Kallman filter ideas - Prediction}
+
+Structure of LGSSM implies $p(x_t| y_{1:t-1})=\mathcal{N}( \mu_{t|t-1}, \Sigma_{t|t-1}  )$ and the existence of recursive rules: \vspace{0.5cm}
+
+\textbf{Prediction} ($\mu_{t-1|t-1} \rightarrow \mu_{t|t-1} $) and ($\Sigma_{t-1|t-1} \rightarrow \Sigma_{t|t-1} $):
+\begin{itemize}
+	\item $\mu_{t|t-1} = F_t \mu_{t-1|t-1}$, 
+	\item $\Sigma_{t|t-1} = F_t \Sigma_{t-1|t-1} F_t^T+ G_t Q_t G_t^T$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Kallman filter ideas - Update/correction} 
+Again, structure of LGSSM implies $p(x_t| y_{1:t})=\mathcal{N}( \mu_{t|t}, \Sigma_{t|t})$ and following recursion rule: \vspace{0.5cm}
+
+\textbf{Update/correction} ($\mu_{t|t-1} \rightarrow \mu_{t|t} $) and ($\Sigma_{t|t-1} \rightarrow \Sigma_{t|t} $):
+\begin{itemize}
+	\item $\mu_{t|t} = \mu_{t|t-1} + K_{t} \nu_{t}$, 
+	\item$\Sigma_{t|t-1} = (I-K_t H_t) \Sigma_{t-1|t-1}$
+\end{itemize}
+
+Where $\nu_t = y_t - \hat{y}_t$, $\hat{y}_t=E[Y_t|Y_{1:t-1}=y_{1:t-1}]=H_t\mu_{t|t-1}$ 
+
+$K_t=\Sigma_{t|t-1}H^T S_t^{-1}$, $S_t=E[(Y_t - \hat{y}_t)(Y_t - \hat{y}_t)^T | Y_{1:t-1} = y_{1:t-1} ] = H_t\Sigma_{t|t-1}H_t^T +R_t$
+
+$K_t$ is called \textbf{Kallman gain}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kallman filter ideas} 
+
+\textbf{Recursive strategy of Kallman filter}
+
+$p(x_t|y_{1:t})$ can be determined estimating parameters for $s\in \N$ of:
+\begin{itemize}
+\item $p(x_s| y_{1:s-1})=\mathcal{N}( \mu_{s|s-1}, \Sigma_{s|s-1})$
+\item $p(x_s| y_{1:s})=\mathcal{N}( \mu_{s|s}, \Sigma_{s|s})$
+\end{itemize}
+
+as follows:
+
+$$(\mu_0, \Sigma_0) \xrightarrow[]{\text{Predict.}} (\mu_{1|0}, \Sigma_{1|0}) \xrightarrow[]{\text{Update}} \ldots $$ 
+$$\ldots \xrightarrow[]{\text{Predict.}} (\mu_{t-1|t-1}, \Sigma_{t-1|t-1})\xrightarrow[]{\text{Update}}$$ 
+$$(\mu_{t|t-1}, \Sigma_{t|t-1}) \xrightarrow[]{\text{Predict.}} (\mu_{t|t}, \Sigma_{t|t}) \xrightarrow[]{\text{}} \ldots $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Inference LGSSM - Kallman Smoother}
+
+ \textbf{P2:} Determine $p(x_t|y_{1:T})$ of the hidden state $X_t$ given all the observations $y_{1:T}$. 
+
+\begin{equation}
+\mu_{t|T}:= E[X_t | Y_{1:T} = y_{1:T} ]
+\end{equation}
+
+\begin{equation}
+\Sigma_{t|T}:= E[(X_t -\mu_{t|T}) (X_t -\mu_{t|T})^T | Y_{1:T} = t_{1:T} ]
+\end{equation}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Kallman Smoother ideas}
+
+Structure of LGSSM implies $p(x_t| y_{1:T})=\mathcal{N}( \mu_{t|T}, \Sigma_{t|T}  )$ and the existence of recursive rules: \vspace{0.5cm}
+
+\textbf{Backward recursion}:
+\begin{itemize}
+	\item $\mu_{t|T} = \mu_{t|t} + J_t (\mu_{t+1|T} - \mu_{t+1|t})$, 
+	\item $\Sigma_{t|T} = \Sigma_{t|t} + J_t (\Sigma_{t+1|T} - \Sigma_{t+1|t})J_t^T$
+\end{itemize}
+\vspace{0.5cm}
+Where $J_t = \Sigma_{t|t} F_{t+1}^T \Sigma_{t+1|t}^{-1}$, is called \textbf{Backwards Kallman gain}.
+
+\end{frame}
+
+\begin{frame}
+
+\textbf{Recursive strategy of Kallman Smoother}
+
+$p(x_t|y_{1:T})$ can be determined estimating parameters as follows:
+
+\begin{itemize}
+	\item Compute $(\mu_{t|t}, \Sigma_{t|t})$ and $(\mu_{t+1|t}, \Sigma_{t+1|t})$ for $t,t+1 \leq T$ using Kallman filter.
+	\item Use backward recursion until obtain $(\mu_{t|T}, \Sigma_{t|T})$.
+\end{itemize}
+
+
+\end{frame}
+
+%
+%\begin{frame}[fragile] % Notice the [fragile] option %
+%\frametitle{Verbatim}
+%\begin{example}[Putting Verbatim]
+%\begin{verbatim}
+%\begin{frame}
+%\frametitle{Outline}
+%\begin{block}
+%{Why Beamer?}
+%Does anybody need an introduction to Beamer?
+%I don't think so.
+%\end{block}
+% Extra carriage return causes problem with verbatim %
+%\end{frame}\end{verbatim} 
+%\end{example}
+%\end{frame}
+ 
+%\begin{frame}[fragile]  % notice the fragile option, since the body
+			% contains a verbatim command
+%Example of the \verb|\cite| command to give a reference is below:
+%Example of citation using \cite{key1} follows on.
+%\end{frame}
+ 
+% \begin{frame}
+% \section{Bibliografía}
+% \frametitle{Referencias}
+% \footnotesize{
+% \begin{thebibliography}{99}
+%  \bibitem[Morita, 2010]{key1} J. Nagata, K. Morita (1989)
+%  \newblock Topics On General Topology.
+%  \newblock \emph{Elsevier Science Publisher B.V.} 15(6), 203 -- 243.
+
+% \bibitem[VanMill, 2010]{key1} J. Van Mill ; M. Husek (1992)
+%  \newblock Recent Progress In General Topology.
+%  \newblock \emph{Elsevier Publications} p. 375.
+
+% \bibitem[MacLane, 2010]{key1} J. S. Mac Lane(1971)
+%  \newblock Categories for the working mathematician,.
+%  \newblock \emph{Springer} p. 375.
+
+%  \bibitem[Ishii, 2010]{key1} Tadashi Ishii (1969)
+%  \newblock On Tychonoff Functor and $w$-Compactness.
+%  \newblock \emph{Topology Appl.} 11, 175 -- 187.
+
+%  \bibitem[Ishii, 2010]{key1} T. Hoshina; K. Morita (1980)
+%  \newblock On Regular Products Of Topological Spaces.
+%  \newblock \emph{Topology Appl.} 11, 47 -- 57.
+% \end{thebibliography}
+% }
+% \end{frame}
+
+
+ 
+% \begin{frame}
+% %\section{Bibliografía}
+% \frametitle{Referencias}
+% \footnotesize{
+% \begin{thebibliography}{99}
+%  \bibitem[Porter, 2010]{key1}J. R. Porter ; R. Grant Woods  (1987)
+%  \newblock Extensions and Absolutes of Hausdorff Spaces.
+%  \newblock \emph{Springer-Verlag} 856.
+
+
+%  \bibitem[Simon, 2010]{key1} Petr Simon (1984)
+%  \newblock Completely regular modification and products.
+%  \newblock \emph{Commentationes Mathematicae Universitatis Carolinae} 25(1), 121--128.
+
+
+
+%  \bibitem[Puppier, 2010]{key1} René Puppier (1969)
+%  \newblock La Completion Universelle D'un Produit D'espaces Completement Reguliers .
+%  \newblock \emph{Publ. Dept. Math, Lyon} 254, 342--351.
+
+
+
+% \end{thebibliography}
+% }
+% \end{frame}
+% 
+% End of slides
+\end{document} 
