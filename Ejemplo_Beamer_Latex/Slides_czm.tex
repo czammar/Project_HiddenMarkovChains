@@ -126,6 +126,132 @@
  \tableofcontents%[sections]
 \end{frame}
 
+
+%\begin{frame}
+%\section{Prediction}
+%\frametitle{Prediction}
+%
+%\begin{block}{Prediction}
+%	 \textbf{Given:} observations up to time s (i.e. $y_{1:s}$ known),\\
+%	 \textbf{Problem:} compute $p(x_t | y_{1:s})$ distribution of $X_t$, for $t > s$.
+%\end{block}
+%
+%\end{frame}
+
+\begin{frame}
+\section{Smoothing}
+\frametitle{Smoothing}
+
+\textbf{General problem of smoothing:}\\
+\textbf{Given:} observations up to time s (i.e. $y_{1:s}$ known),\\
+\textbf{Problem:} compute $p(x_t | y_{1:s})$ distribution of $X_t$, for $t < s$.
+\vspace{0.5cm}
+
+A particular case is when we know all history of observations:
+
+\begin{block}{Smoothing with all history of observations}
+	\textbf{Given:} observations up to time T (i.e. $y_{1:T}$ known),\\
+	\textbf{Problem:} compute $p(x_t | y_{1:T})$ distribution of $X_t$, for $t < T$.
+\end{block}
+
+This case can be solved using a recursive algorithm \textbf{Forward-backward Smoothing}.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Forward-backward Smoothing I}
+
+\textbf{Ideas:}
+
+\begin{itemize}
+\item  $p(x_t |y_{1:T})$ can be split as:
+$$p(x_t |y_{1:T}) = \frac{p(x_t , y_{1:t} ) \cdot p(y_{t+1:T} |x_t )}
+	{p(y_{1:T})}$$
+	
+\item $p(y_{1:T})$ is a normalization constant (calculation explained in next section).
+	
+\item Algorithm 1 Forward $\alpha$-recursion can estimate $\alpha_t(x_t)=p(x_t , y_{1:t} )$.
+
+\item We can approach HHM structure to generate a recursion rule for $$\beta_t(x_t):=p(y_{t+1:T} |x_t )$$
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Forward-backward Smoothing II}
+\begin{eqnarray*}
+\textcolor{red}{p(y_{t+1:T} |x_{t-1} )} & = & \sum_{x_t \in \mathcal{X}} p(y_{t+1:T},x_t |x_{t-1} )\\
+                       & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|y_{t+1:T},x_t,x_{t-1} |x_{t-1} ) p(y_{t+1:T},x_t |x_{t-1} ) \\
+     & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|x_{t-1},x_t) p(y_{t+1:T}|x_t)\\
+     & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|x_t) \textcolor{red}{p(y_{t+1:T}|x_t)} p(y_{t}|x_{t-1})\\   
+\end{eqnarray*}
+We have a backward recursion for $t=T, \ldots, 2$
+
+$$ \textcolor{red}{\beta_{t-1}(x_{t-1})} = \sum_{x_t \in \mathcal{X}} p(y_{t}|x_t)  p(x_{t}|x_{t-1}) \textcolor{red}{\beta_t(x_t)}, \mbox{ } \beta_T(x_T)=1 $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Forward-backward Smoothing III}
+
+If $\mathcal{X}=\{1,\ldots, K\}$:
+\begin{figure}
+	\includegraphics[scale=0.45]{images/backward_beta_recursion.jpg}
+	\caption{Backward $\beta$-recursion Algorithm}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Forward-backward Smoothing III}
+\textbf{Backward and Forward Algorithm for smoothing:}
+
+\begin{itemize}
+	\item Algorithm 1 Forward $\alpha$-recursion to get $\alpha_t(x_t)=p(x_t , y_{1:t})$.
+	\item Algorithm 2 Backward $\beta$-recursion to get $\beta_t(x_t)=p(y_{t+1:T} |x_t )$.
+	\item Smoothing probability mass function is estimated as:
+	
+	$$ p(x_t | y_{1:T}) = \frac{p(x_t, y_{1:T})}{p(y_{1:T})}=\frac{\alpha_t(x_t) \beta_t(x_t)}{\sum_{x_t \in \mathcal{X}} \alpha_t(x_t) \beta_t(x_t)}$$
+
+\end{itemize}
+\vspace{0.5cm}
+ \textbf{Notes:} 1) Algorithms 1 y 2 can be run independently, 2) Backward and Forward Algorithm is from order $\mathcal{O}(T\cdot|\mathcal{X}|^2)$
+
+\end{frame}
+
+
+\begin{frame}
+\section{Likelihood}
+\frametitle{Likelihood}
+
+\textbf{Given:} all observations (i.e. $y_{1:T}$ known),\\
+\textbf{Problem:} compute $p(y_{1:T})$ likelihood function of observations.
+
+\vspace{0.5cm}
+
+\textbf{Ideas:}
+
+\begin{itemize}
+	\item Notice $$p(y_{1:T} ) = \sum_{x_t \in \mathcal{X}} p(x_t , y_{1:t} ) \cdot p(y_{t+1:T} |x_t )$$
+	\item This implies $$p(y_{1:T} ) = \sum_{x_t \in \mathcal{X}} \alpha_t(x_t) \beta_t(x_t) $$
+	
+	\item $p(y_{1:T} )$ can be estimated using algorithm 1 Forward $\alpha$-recursion and algorithm 2 Backward $\beta$-recursion.
+	
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\section{Most likely state path/Decoding}
+\frametitle{Most likely state path/Decoding}
+
+\textbf{Given:} history of observations (i.e. $y_{1:T}$ known),\\
+\textbf{Problem:} Find the most likely state history $X_{1:T}$.
+
+\end{frame}
+
+
 \begin{frame}
 \section{Continuous-state Hidden Markov Models}
 \frametitle{Continuous-state Hidden Markov Models}

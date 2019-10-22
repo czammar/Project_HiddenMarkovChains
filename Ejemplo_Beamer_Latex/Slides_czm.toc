@@ -1,1 +1,4 @@
-\beamer@sectionintoc {1}{Continuous-state Hidden Markov Models}{3}{0}{1}
+\beamer@sectionintoc {1}{Smoothing}{3}{0}{1}
+\beamer@sectionintoc {2}{Likelihood}{8}{0}{2}
+\beamer@sectionintoc {3}{Most likely state path/Decoding}{9}{0}{3}
+\beamer@sectionintoc {4}{Continuous-state Hidden Markov Models}{10}{0}{4}

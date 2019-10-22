@@ -4,7 +4,7 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Continuous-state Hidden Markov Models}{3}{Continuous-state Hidden Markov Models}{0}}
+\headcommand {\sectionentry {1}{Smoothing}{3}{Smoothing}{0}}
 \headcommand {\slideentry {1}{0}{0}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\slideentry {1}{0}{1}{4/4}{}{0}}
@@ -15,26 +15,49 @@
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\slideentry {1}{0}{4}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {1}{0}{5}{8/8}{}{0}}
+\headcommand {\beamer@sectionpages {1}{7}}
+\headcommand {\beamer@subsectionpages {1}{7}}
+\headcommand {\sectionentry {2}{Likelihood}{8}{Likelihood}{0}}
+\headcommand {\slideentry {2}{0}{0}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {1}{0}{6}{9/9}{}{0}}
+\headcommand {\beamer@sectionpages {1}{8}}
+\headcommand {\beamer@subsectionpages {1}{8}}
+\headcommand {\sectionentry {3}{Most likely state path/Decoding}{9}{Most likely state path/Decoding}{0}}
+\headcommand {\slideentry {3}{0}{0}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {1}{0}{7}{10/10}{}{0}}
+\headcommand {\beamer@sectionpages {1}{9}}
+\headcommand {\beamer@subsectionpages {1}{9}}
+\headcommand {\sectionentry {4}{Continuous-state Hidden Markov Models}{10}{Continuous-state Hidden Markov Models}{0}}
+\headcommand {\slideentry {4}{0}{0}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {1}{0}{8}{11/11}{}{0}}
+\headcommand {\slideentry {4}{0}{1}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {1}{0}{9}{12/12}{}{0}}
+\headcommand {\slideentry {4}{0}{2}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {1}{0}{10}{13/13}{}{0}}
+\headcommand {\slideentry {4}{0}{3}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {1}{0}{11}{14/14}{}{0}}
+\headcommand {\slideentry {4}{0}{4}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {1}{0}{12}{15/15}{}{0}}
+\headcommand {\slideentry {4}{0}{5}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {1}{0}{13}{16/16}{}{0}}
+\headcommand {\slideentry {4}{0}{6}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@partpages {1}{16}}
-\headcommand {\beamer@subsectionpages {1}{16}}
-\headcommand {\beamer@sectionpages {1}{16}}
-\headcommand {\beamer@documentpages {16}}
-\headcommand {\gdef \inserttotalframenumber {16}}
+\headcommand {\slideentry {4}{0}{7}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {4}{0}{8}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {4}{0}{9}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {4}{0}{10}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {4}{0}{11}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {4}{0}{12}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {4}{0}{13}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@partpages {1}{23}}
+\headcommand {\beamer@subsectionpages {1}{23}}
+\headcommand {\beamer@sectionpages {1}{23}}
+\headcommand {\beamer@documentpages {23}}
+\headcommand {\gdef \inserttotalframenumber {23}}
