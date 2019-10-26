@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  21 OCT 2019 19:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  26 OCT 2019 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1100,7 +1100,7 @@ Overfull \hbox (13.62375pt too wide) has occurred while \output is active
 [5
 
 ]
-<images/backward_beta_recursion.jpg, id=199, 727.71875pt x 205.76875pt>
+<images/backward_beta_recursion.jpg, id=194, 727.71875pt x 205.76875pt>
 File: images/backward_beta_recursion.jpg Graphic file (type jpg)
 <use images/backward_beta_recursion.jpg>
 Package pdftex.def Info: images/backward_beta_recursion.jpg  used on input line
@@ -1135,11 +1135,11 @@ Overfull \hbox (13.62375pt too wide) has occurred while \output is active
 [9
 
 ]
-<gps_cut.png, id=306, 501.875pt x 345.29pt>
-File: gps_cut.png Graphic file (type png)
-<use gps_cut.png>
-Package pdftex.def Info: gps_cut.png  used on input line 265.
-(pdftex.def)             Requested size: 225.84166pt x 155.37904pt.
+<images/viterbi1.jpg, id=301, 790.955pt x 118.4425pt>
+File: images/viterbi1.jpg Graphic file (type jpg)
+<use images/viterbi1.jpg>
+Package pdftex.def Info: images/viterbi1.jpg  used on input line 285.
+(pdftex.def)             Requested size: 316.3764pt x 47.37614pt.
 
 Overfull \hbox (13.62375pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
@@ -1147,7 +1147,7 @@ Overfull \hbox (13.62375pt too wide) has occurred while \output is active
 
 [10
 
- <./gps_cut.png (PNG copy)>]
+ <./images/viterbi1.jpg>]
 Overfull \hbox (13.62375pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1169,20 +1169,32 @@ Overfull \hbox (13.62375pt too wide) has occurred while \output is active
 [13
 
 ]
+<images/viterbi2.jpg, id=411, 732.7375pt x 310.15875pt>
+File: images/viterbi2.jpg Graphic file (type jpg)
+<use images/viterbi2.jpg>
+Package pdftex.def Info: images/viterbi2.jpg  used on input line 338.
+(pdftex.def)             Requested size: 329.72884pt x 139.57014pt.
+
 Overfull \hbox (13.62375pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [14
 
-]
+ <./images/viterbi2.jpg>]
+<gps_cut.png, id=438, 501.875pt x 345.29pt>
+File: gps_cut.png Graphic file (type png)
+<use gps_cut.png>
+Package pdftex.def Info: gps_cut.png  used on input line 352.
+(pdftex.def)             Requested size: 225.84166pt x 155.37904pt.
+
 Overfull \hbox (13.62375pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
 
 [15
 
-]
+ <./gps_cut.png (PNG copy)>]
 Overfull \hbox (13.62375pt too wide) has occurred while \output is active
  [][]  \OT1/cmss/m/n/6 ([])  
  []
@@ -1239,6 +1251,41 @@ Overfull \hbox (13.62375pt too wide) has occurred while \output is active
 [23
 
 ]
+Overfull \hbox (13.62375pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[24
+
+]
+Overfull \hbox (13.62375pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[25
+
+]
+Overfull \hbox (13.62375pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[26
+
+]
+Overfull \hbox (13.62375pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[27
+
+]
+Overfull \hbox (13.62375pt too wide) has occurred while \output is active
+ [][]  \OT1/cmss/m/n/6 ([])  
+ []
+
+[28
+
+]
 \tf@nav=\write7
 \openout7 = `Slides_czm.nav'.
 
@@ -1248,51 +1295,40 @@ Overfull \hbox (13.62375pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `Slides_czm.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 576.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 576.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 663.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 663.
  (./Slides_czm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 576.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 576.
-
-
-Package rerunfilecheck Warning: File `Slides_czm.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Slides_czm.out':
-(rerunfilecheck)             Before: F3BD63C2144E1352FCABCB75F0BB057A;272
-(rerunfilecheck)             After:  526C7BBEFB951FED66FB3B02BF1F15B2;227.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 663.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 663.
+Package rerunfilecheck Info: File `Slides_czm.out' has not changed.
+(rerunfilecheck)             Checksum: 526C7BBEFB951FED66FB3B02BF1F15B2;227.
  ) 
 Here is how much of TeX's memory you used:
- 20945 strings out of 494457
- 382863 string characters out of 6173956
+ 20977 strings out of 494457
+ 383333 string characters out of 6173956
  508097 words of memory out of 5000000
- 24051 multiletter control sequences out of 15000+600000
- 18426 words of font info for 76 fonts, out of 8000000 for 9000
+ 24071 multiletter control sequences out of 15000+600000
+ 20382 words of font info for 84 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  56i,16n,63p,3243b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Navigation24} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.5} has been referenced but does not exist,
- replaced by a fixed one
-
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Slides_czm.pdf (23 pages, 298256 bytes).
+Output written on Slides_czm.pdf (28 pages, 359645 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
- 672 compressed objects within 7 object streams
- 53 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 873 PDF objects out of 1000 (max. 8388607)
+ 800 compressed objects within 8 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

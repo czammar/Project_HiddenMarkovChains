@@ -247,9 +247,96 @@ If $\mathcal{X}=\{1,\ldots, K\}$:
 \frametitle{Most likely state path/Decoding}
 
 \textbf{Given:} history of observations (i.e. $y_{1:T}$ known),\\
-\textbf{Problem:} Find the most likely state history $X_{1:T}$.
+\textbf{Problem:} Find the most likely state history $x_{0:T}$.
+
+\vspace{0.5cm}
+
+For fixed $y_{1:T}$, solve MAP problem with \textbf{conditional distribution}:
+\begin{equation*}
+\hat{x}_0 = argmax_{x_{0:T}} \hspace{0.2cm} p(x_{0:T}| y_{1:T}) 
+\end{equation*}
+Or equivalently with \textbf{joint distribution}:
+\begin{equation*}
+\hat{x}_0 = argmax_{x_{0:T}} \hspace{0.2cm} p(x_{0:T}, y_{1:T})
+\end{equation*}
+
+\textbf{Note:} unfeasible if number of different state paths $|\mathcal{X}|^{T+1}$ is large from optimization point of view!!.
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Most likely state path - Viterbi algorithm}
+
+However, we can use \textbf{Viterbi algorithm} to do MAP estimation.
+
+\textbf{Ideas:}
+
+\begin{itemize}
+	\item Explote structure of HMM do estimations based on backward-forward or forward-backward recursions.
+	\item Compute \textcolor{red}{messages} from time $t$  to $t-1$ ($m_{t-1}(x_{t-1}) \leftarrow m_{t}(x_{t})$)
+	\item Use \textcolor{red}{messages} to estimate feasible points $t-1$  to $t$ ($\hat{x}_{t-1} \rightarrow \hat{x}_{t}$)	
+\end{itemize}
+
+\begin{figure}
+	\includegraphics[scale=0.4]{images/viterbi1.jpg}
+	\caption{Scheme of Vitterbi algorithm recursions}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{What do you mean by \textcolor{red}{messages $m_t(x_t)$}? Part I}
+
+Factorizing $p(x_{0:T},y_{1:T})$:
+$$p(x_{0:T},y_{1:T}) = p(x_0)\prod_{t=1}^T p(x_{t}|x_{t-1}) p(y_{t}|x_{t})$$
+We can split our optimization problem in different optimization problems:
+$$\Rightarrow \max_{ \textcolor{red}{ x_0:x_T} } p(x_{0:T},y_{1:T}) =$$ 
+$$ \max_{ \textcolor{red}{ x_0:x_{T-1}} } \left\{ \left\{ p(x_0)  \prod_{t=1}^{\textcolor{red}{T-1}} p(x_{t}|x_{t-1}) p(y_{t}|x_{t}) \right\} \max_{ \textcolor{red}{ x_{T}} } p(x_{\textcolor{red}{T}}|x_{\textcolor{red}{T-1}}) p(y_{\textcolor{red}{T}}|x_{\textcolor{red}{T}})  \right \}$$
+$$=\max_{ \textcolor{red}{ x_0:x_{T-1}} } \left\{ \left\{ p(x_0)  \prod_{t=1}^{\textcolor{red}{T-1}} p(x_{t}|x_{t-1}) p(y_{t}|x_{t}) \right\} m_{\textcolor{red}{T-1}}(x_{\textcolor{red}{T-1}})  \right \}$$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{What do you mean by \textcolor{red}{messages $m_t(x_t)$}? Part II}
+
+Continuing this process we can define a set of messages based on iterative optimization problems:
+$$m_{t-1}(x_{t-1}) = \max_{  x_{t:T} }\left\{    \prod_{k=t}^{T} p(x_{k}|x_{k-1}) p(y_{k}|x_{k}) \right\} \mbox{ for } t=T-1, \ldots, 1$$
+$$m_T(x_T)=1$$
+
+\vspace{0.3cm}
+
+This satisfies the following recursion:
+
+$$ \textcolor{red}{m_{t-1}(x_{t-1})}  = \max_{  x_{t} } p(y_t | x_t) p(x_t | x_{t-1}) \textcolor{red}{m_t(x_t)}$$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{What do you mean by \textcolor{red}{messages $m_t(x_t)$}? Part III}
+Definitions of messages is good for our problem because:
+$$p(x_0) m_0(x_0) = \max_{x_{1:T}} p(x_{0:T}, y_{1:T})$$
+$$\Rightarrow \hat{x_0} = arg \max_{x_0} \left(\max_{x_{1:T}} p(x_{0:T}, y_{1:T}) \right) = arg \max_{x_0} m_0(x_0) p(x_0) $$
+
+And also
+
+$$ \hat{x_t} = arg \max_{x_t} p( \textcolor{red}{ \hat{x}_{0:t-1}}, x_t, x_{t+1:T},y_{1:T} )$$
+$$ = arg \max_{x_t} p(\textcolor{red}{\hat{x}_{t-1}}, x_t, x_{t+1:T},y_{1:T} )$$
+
+$$ = arg \max_{x_t} \left(\textcolor{red}{m_t(x_{t})} p(y_t|x_t)  p(x_t | \hat{x}_{t-1})\right) $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Most likely state path - Viterbi algorithm}
+\begin{figure}
+	\includegraphics[scale=0.45]{images/viterbi2.jpg}
+	\caption{Vitterbi algorithm}
+\end{figure}
+
+\textbf{Notes:} 1) Viterbi algorithm has order $\mathcal{O}(T |\mathcal{X}|^2)$, 2) In practice logarithms are computed to assure numerical stability.
+
+\end{frame}
+
 
 
 \begin{frame}
