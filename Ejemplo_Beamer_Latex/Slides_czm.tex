@@ -576,8 +576,42 @@ $p(x_t|y_{1:T})$ can be determined estimating parameters as follows:
 	\item Compute $(\mu_{t|t}, \Sigma_{t|t})$ and $(\mu_{t+1|t}, \Sigma_{t+1|t})$ for $t,t+1 \leq T$ using Kallman filter.
 	\item Use backward recursion until obtain $(\mu_{t|T}, \Sigma_{t|T})$.
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\section{An example for LGSSM}
+\frametitle{A example for LGSSM}
+Let's consider a toy example for a random walk given by:
+$$X_t = X_{t-1} + V_t $$
+$$Y_t = X_{t} + W_t $$
+
+Where 
+
+\begin{itemize}
+	\item$X_{t}$: trigonometric function plus gaussian noise, for $t=1,\ldots, 50$.
+	\item $X_0 = \mathcal{N}(0,1)$, $V_t \sim \mathcal{N}(0,Q)$, $W_t \sim \mathcal{N}(0,R)$, with $Q=0.02$ and $R=0.2$
+\end{itemize}
 
 
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Filtering}
+\begin{figure}
+	\includegraphics[scale=0.7]{filtermean_obs.png}
+	\caption{Observations and filtering mean and 99\% credible intervals over time.}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\section{An example for LGSSM}
+\frametitle{Smoothing}
+\begin{figure}
+	\includegraphics[scale=0.7]{smoothmean_obs.png}
+	\caption{Observations and smoothing mean and 99\% credible intervals over time}
+\end{figure}
 \end{frame}
 
 %

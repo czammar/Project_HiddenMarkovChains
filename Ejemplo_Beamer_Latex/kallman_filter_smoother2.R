@@ -1,6 +1,6 @@
 library(tidyverse)
 
-function(y, F, G, Q, H, R, mu0, Sigma0){
+kalman<-function(y, F, G, Q, H, R, mu0, Sigma0){
   dy = nrow(y)
   T0 = ncol(y)
   dx = length(mu0)
@@ -60,12 +60,85 @@ G = 1
 Q = 0.02
 H = 1
 F0 = 1
+set.seed(8675301) # Instance a seed for replication
 y = matrix(x + rnorm(T0, sd = sqrt(R)), nrow = 1, ncol = T0)
 results.KF = kalman(y, F0, G, Q, H, R, mu0, Sigma0)
 mu.f = results.KF$mu.f
 Sigma.f = results.KF$Sigma.f
 mu.p = results.KF$mu.p
+Sigma.p = results.KF$Sigma.p
 mu.s = results.KF$mu.s
+Sigma.s = results.KF$Sigma.s
+
+# Find multiplier for 99% CI
+z.val <- qnorm(1 - (1 - 0.9999)/2)
+z.val
+
+# aux variables to plot CIs
+LoCI_f <- mu.f - z.val * Sigma.f[1,1,]
+HiCI_f <- mu.f + z.val * Sigma.f[1,1,]
+LoCI_s <- mu.s - z.val * Sigma.s[1,1,]
+HiCI_s <- mu.s + z.val * Sigma.s[1,1,]
+LoCI_p <- mu.p - z.val * Sigma.p[1,1,]
+HiCI_p <- mu.p + z.val * Sigma.p[1,1,]
+
+# 
+data_toplot <- tibble(x[1,],y[1,],mu.f[1,],LoCI_f[1,],HiCI_f[1,],mu.s[1,],LoCI_s[1,],HiCI_s[1,],mu.p[1,],LoCI_p[1,],HiCI_p[1,])
+colnames(data_toplot) <- c("hidden_var","observation","mu.f","LoCI_f","HiCI_f","mu.s","LoCI_s","HiCI_s","mu.p","LoCI_p","HiCI_p")
+
+# Filtering
+
+## Hidden var vs filtering mean
+ggplot(data_toplot,aes(x=1:50,y=data_toplot$observation))+ 
+  geom_point(aes(1:50,data_toplot$observation, color = 'Hidden variable'))+ 
+  geom_point(aes(1:50,mu.f, color = 'Filtering mean'))+ 
+  scale_color_manual(values = c("#00AFBB", "#E7B800"))+
+  geom_smooth(data = data_toplot ,aes(y=mu.f, ymin = LoCI_f, ymax = HiCI_f),stat = "identity",linetype=0)+
+  labs(x="Time", y = "Values") + # Etiquetas de los ejes
+  ggtitle("Filtering mean and 99% credible intervals over time")+ # Titulo del plot
+  theme_minimal()
+
+## Hidden var vs filtering mean
+
+ggplot(data_toplot,aes(x=1:50,y=data_toplot$hidden_var))+ 
+  geom_point(aes(1:50,data_toplot$hidden_var, color = 'Hidden variable'))+ 
+  geom_point(aes(1:50,mu.f, color = 'Filtering mean'))+ 
+  scale_color_manual(values = c("#00AFBB", "black"))+
+  geom_smooth(data = data_toplot ,aes(y=mu.f, ymin = LoCI_f, ymax = HiCI_f),stat = "identity",linetype=0,alpha=0.15)+
+  labs(x="Time", y = "Values",color="Data") + # Etiquetas de los ejes
+  #ggtitle("Hidden variable vs Filtering mean and 99% credible \n intervals over time")+ # Titulo del plot
+  theme_minimal()
+
+## Observations vs filtering mean
+
+ggplot(data_toplot,aes(x=1:50,y=data_toplot$observation))+ 
+  geom_point(aes(1:50,data_toplot$observation, color = 'Observations'))+ 
+  geom_point(aes(1:50,mu.f, color = 'Filtering mean'))+ 
+  scale_color_manual(values = c("#00AFBB", "red"))+
+  geom_smooth(data = data_toplot ,aes(y=mu.f, ymin = LoCI_f, ymax = HiCI_f),stat = "identity",linetype=0,alpha=0.15)+
+  labs(x="Time", y = "Values",color="Data") + # Etiquetas de los ejes
+  #ggtitle("Observations vs Filtering mean and 99% credible \n intervals over time")+ # Titulo del plot
+  theme_minimal()
 
 
-ggplot()+ geom_point(aes(1:50,mu.p[1,], color = 'red'))+geom_point(aes(1:50,y[1,], color = 'blue'))
+## Hidden var vs smoothing mean
+
+ggplot(data_toplot,aes(x=1:50,y=data_toplot$hidden_var))+ 
+  geom_point(aes(1:50,data_toplot$hidden_var, color = 'Hidden variable'))+ 
+  geom_point(aes(1:50,mu.s, color = 'Filtering mean'))+ 
+  scale_color_manual(values = c("#00AFBB", "green"))+
+  geom_smooth(data = data_toplot ,aes(y=mu.s, ymin = LoCI_s, ymax = HiCI_s),stat = "identity",linetype=0,alpha=0.15)+
+  labs(x="Time", y = "Values",color="Data") + # Etiquetas de los ejes
+  #ggtitle("Hidden variable vs Filtering mean and 99% credible \n intervals over time")+ # Titulo del plot
+  theme_minimal()
+
+## Observations vs smoothing mean
+
+ggplot(data_toplot,aes(x=1:50,y=data_toplot$observation))+ 
+  geom_point(aes(1:50,data_toplot$observation, color = 'Observations'))+ 
+  geom_point(aes(1:50,mu.s, color = 'Smoothing mean'))+ 
+  scale_color_manual(values = c("#00AFBB", "green"))+
+  geom_smooth(data = data_toplot ,aes(y=mu.s, ymin = LoCI_s, ymax = HiCI_s),stat = "identity",linetype=0,alpha=0.15)+
+  labs(x="Time", y = "Values",color="Data") + # Etiquetas de los ejes
+  #ggtitle("Observations vs Smoothing mean and 99% credible \n intervals over time")+ # Titulo del plot
+  theme_minimal()
