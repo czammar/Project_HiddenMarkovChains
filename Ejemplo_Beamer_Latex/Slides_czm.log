@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  30 OCT 2019 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  31 OCT 2019 09:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1054,269 +1054,154 @@ File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 Package xypdf Info: Line width: 0.43799pt on input line 118.
- (./Slides_czm.nav)
-Overfull \hbox (13.62375pt too wide) in paragraph at lines 118--118
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+ (./Slides_czm.nav) [1
 
-
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[1
-
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./Slides_czm.toc)
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[2
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Slid
+es_czm.toc) [2
 
 ]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+<images/frog_ladder.jpg, id=109, 1284.8pt x 718.685pt>
+File: images/frog_ladder.jpg Graphic file (type jpg)
+<use images/frog_ladder.jpg>
+Package pdftex.def Info: images/frog_ladder.jpg  used on input line 135.
+(pdftex.def)             Requested size: 308.06367pt x 172.32343pt.
+ [3
 
-[3
+ <./images/frog_ladder.jpg>]
+<images/frog2.png, id=136, 642.4pt x 1099.10625pt>
+File: images/frog2.png Graphic file (type png)
+<use images/frog2.png>
+Package pdftex.def Info: images/frog2.png  used on input line 159.
+(pdftex.def)             Requested size: 71.88242pt x 122.98166pt.
+ [4
+
+ <./images/frog2.png>] [5
 
 ]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+<images/frog_filtering.png, id=202, 987.69pt x 400.49625pt>
+File: images/frog_filtering.png Graphic file (type png)
+<use images/frog_filtering.png>
+Package pdftex.def Info: images/frog_filtering.png  used on input line 196.
+(pdftex.def)             Requested size: 308.06367pt x 124.91032pt.
+ [6
 
-[4
+ <./images/frog_filtering.png>]
+<images/frog_smooth.png, id=230, 962.59625pt x 403.5075pt>
+File: images/frog_smooth.png Graphic file (type png)
+<use images/frog_smooth.png>
+Package pdftex.def Info: images/frog_smooth.png  used on input line 204.
+(pdftex.def)             Requested size: 308.06367pt x 129.1312pt.
+ [7
+
+ <./images/frog_smooth.png>]
+<images/frog_smooth_map.png, id=259, 965.6075pt x 412.54124pt>
+File: images/frog_smooth_map.png Graphic file (type png)
+<use images/frog_smooth_map.png>
+Package pdftex.def Info: images/frog_smooth_map.png  used on input line 212.
+(pdftex.def)             Requested size: 308.06367pt x 131.61302pt.
+ [8
+
+ <./images/frog_smooth_map.png>] [9
+
+] [10
 
 ]
-LaTeX Font Info:    Try loading font information for U+eus on input line 194.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
+LaTeX Font Info:    Try loading font information for U+eus on input line 280.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-)
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[5
+) [11
 
 ]
-<images/backward_beta_recursion.jpg, id=205, 727.71875pt x 205.76875pt>
+<images/backward_beta_recursion.jpg, id=375, 727.71875pt x 205.76875pt>
 File: images/backward_beta_recursion.jpg Graphic file (type jpg)
 <use images/backward_beta_recursion.jpg>
 Package pdftex.def Info: images/backward_beta_recursion.jpg  used on input line
- 204.
+ 290.
 (pdftex.def)             Requested size: 327.47041pt x 92.59506pt.
+ [12
 
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+ <./images/backward_beta_recursion.jpg>] [13
 
-[6
+] [14
 
- <./images/backward_beta_recursion.jpg>]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[7
+] [15
 
 ]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[8
-
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[9
-
-]
-<images/viterbi1.jpg, id=312, 790.955pt x 118.4425pt>
+<images/viterbi1.jpg, id=481, 790.955pt x 118.4425pt>
 File: images/viterbi1.jpg Graphic file (type jpg)
 <use images/viterbi1.jpg>
-Package pdftex.def Info: images/viterbi1.jpg  used on input line 285.
+Package pdftex.def Info: images/viterbi1.jpg  used on input line 371.
 (pdftex.def)             Requested size: 316.3764pt x 47.37614pt.
-
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[10
+ [16
 
  <./images/viterbi1.jpg>]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[11
-
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[12
-
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[13
-
-]
-<images/viterbi2.jpg, id=422, 732.7375pt x 310.15875pt>
-File: images/viterbi2.jpg Graphic file (type jpg)
-<use images/viterbi2.jpg>
-Package pdftex.def Info: images/viterbi2.jpg  used on input line 338.
-(pdftex.def)             Requested size: 329.72884pt x 139.57014pt.
-
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[14
-
- <./images/viterbi2.jpg>]
-<gps_cut.png, id=449, 501.875pt x 345.29pt>
-File: gps_cut.png Graphic file (type png)
-<use gps_cut.png>
-Package pdftex.def Info: gps_cut.png  used on input line 352.
-(pdftex.def)             Requested size: 225.84166pt x 155.37904pt.
-
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[15
-
- <./gps_cut.png (PNG copy)>]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[16
-
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
 [17
 
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+] [18
 
-[18
+] [19
 
 ]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+<images/viterbi2.jpg, id=591, 732.7375pt x 310.15875pt>
+File: images/viterbi2.jpg Graphic file (type jpg)
+<use images/viterbi2.jpg>
+Package pdftex.def Info: images/viterbi2.jpg  used on input line 424.
+(pdftex.def)             Requested size: 329.72884pt x 139.57014pt.
+ [20
 
-[19
+ <./images/viterbi2.jpg>]
+<gps_cut.png, id=618, 501.875pt x 345.29pt>
+File: gps_cut.png Graphic file (type png)
+<use gps_cut.png>
+Package pdftex.def Info: gps_cut.png  used on input line 438.
+(pdftex.def)             Requested size: 225.84166pt x 155.37904pt.
+ [21
 
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[20
-
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[21
-
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
+ <./gps_cut.png (PNG copy)>]
 [22
 
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+] [23
 
-[23
+] [24
 
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+] [25
 
-[24
+] [26
 
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+] [27
 
-[25
+] [28
 
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
+] [29
 
-[26
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
 
 ]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[27
-
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[28
-
-]
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[29
-
-]
-<filtermean_obs.png, id=849, 464.4853pt x 219.82124pt>
+<filtermean_obs.png, id=1018, 464.4853pt x 219.82124pt>
 File: filtermean_obs.png Graphic file (type png)
 <use filtermean_obs.png>
-Package pdftex.def Info: filtermean_obs.png  used on input line 606.
+Package pdftex.def Info: filtermean_obs.png  used on input line 692.
 (pdftex.def)             Requested size: 325.1375pt x 153.87381pt.
-
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[30
+ [36
 
  <./filtermean_obs.png>]
-<smoothmean_obs.png, id=875, 465.23813pt x 250.68657pt>
+<smoothmean_obs.png, id=1044, 465.23813pt x 250.68657pt>
 File: smoothmean_obs.png Graphic file (type png)
 <use smoothmean_obs.png>
-Package pdftex.def Info: smoothmean_obs.png  used on input line 615.
+Package pdftex.def Info: smoothmean_obs.png  used on input line 701.
 (pdftex.def)             Requested size: 325.66446pt x 175.47939pt.
-
-Overfull \hbox (13.62375pt too wide) has occurred while \output is active
- [][]  \OT1/cmss/m/n/6 ([])  
- []
-
-[31
+ [37
 
  <./smoothmean_obs.png (PNG copy)>]
 \tf@nav=\write7
@@ -1328,40 +1213,41 @@ Overfull \hbox (13.62375pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `Slides_czm.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 697.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 697.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 783.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 783.
  (./Slides_czm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 697.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 697.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 783.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 783.
 Package rerunfilecheck Info: File `Slides_czm.out' has not changed.
 (rerunfilecheck)             Checksum: E44BE5319D4F90CCAC2023879045ECAB;337.
  ) 
 Here is how much of TeX's memory you used:
- 21009 strings out of 494457
- 383748 string characters out of 6173956
- 508097 words of memory out of 5000000
- 24093 multiletter control sequences out of 15000+600000
+ 21058 strings out of 494457
+ 384573 string characters out of 6173956
+ 508378 words of memory out of 5000000
+ 24125 multiletter control sequences out of 15000+600000
  20382 words of font info for 84 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  56i,16n,63p,3243b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Slides_czm.pdf (31 pages, 406339 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Slides_czm.pdf (37 pages, 664666 bytes).
 PDF statistics:
- 966 PDF objects out of 1000 (max. 8388607)
- 887 compressed objects within 9 object streams
- 69 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1143 PDF objects out of 1200 (max. 8388607)
+ 1046 compressed objects within 11 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

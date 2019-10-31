@@ -107,7 +107,7 @@
 %\logo{\includegraphics[height=0.6cm]{yourlogo.eps}}
 %
 \title[Hidden Markov Chains]{Hidden Markov Chains}
-\author{Marco Julio, Nicolás, Sebastián and César}
+\author{Marco, Nicolás, Sebastián and César}
 \institute[ITAM]
 %\date{November 7, 2019}
 % \today will show current date. 
@@ -125,6 +125,92 @@
 \frametitle{Index}
  \tableofcontents%[sections]
 \end{frame}
+
+\begin{frame}
+\frametitle{Example: Hidden Mark-frog Chains}
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{images/frog_ladder.jpg}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example: Hidden Mark-frog Chains}
+
+\begin{columns}
+	\begin{column}{0.3\textwidth}
+				\begin{center}
+			\includegraphics[width=0.7\textwidth]{images/frog2.png}
+		\end{center}
+
+	\end{column}
+	\begin{column}{0.6\textwidth}  %%<--- here
+	
+		\begin{itemize}
+			\item Our frog is jumping on a ladder with $K=6$ levels.
+			\item From position $X_t$ level at which the frog is at time $t$ is \textbf{not observed}.
+			\item Frog’s detector at the lowest level of the ladder sends a signal$Y_t$ $$Y_t=1 \mbox{ }non-detection$$ $$Y_t=2 \mbox{ }detection$$
+			\item Observations $$y_{1:14} = (1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 2)$$
+		\end{itemize}		
+		
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example: Hidden Mark-frog Chains}
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+	\textbf{Transition matrix}
+	$p=0.4$
+	$$A_{1,2} = 1-p, A_{K,1} = \frac{1-p}{2}$$
+	$$ A_{i,i+1} = \frac{1-p}{2} \mbox{ for } i=1,\ldots, K-1$$
+	$$ A_{i,i} = p \mbox{ for } i=1,\ldots, K$$
+	$$ A_{i,i-1} = \frac{1-p}{2} \mbox{ for } i=2,\ldots, K$$
+	\end{column}
+	\begin{column}{0.5\textwidth}  %%<--- here
+	\textbf{Probability of detection}
+	$$P(Y_t=2|X_t=k) $$ 
+	$$=\begin{cases} 0.9 &\mbox{if } k=1 \\
+	0.5 & \mbox{if } k=1 \\
+	0.1 & \mbox{if } k=2 \\
+	0 & \mbox{ } otherwise
+	\end{cases}$$	
+		
+	\end{column}
+\end{columns}
+
+\vspace{0.5cm}
+
+\textbf{Problems:} From frog’s observations of position at each time $t$, infer 1) filtering and 2) smoothing and 3) MAP estimate of pmf's.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example: Hidden Mark-frog Chains - Filtering pmf}
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{images/frog_filtering.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example: Hidden Mark-frog Chains - Smoothing pmf}
+\begin{center}
+	\includegraphics[width=0.9\textwidth]{images/frog_smooth.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example: Hidden Mark-frog Chains - MAP pmf}
+
+	\includegraphics[width=0.9\textwidth]{images/frog_smooth_map.png}
+
+\textbf{Note:} Image shows Smoothing pmf over time $t$ and MAP estimate
+\end{frame}
+
 
 
 %\begin{frame}
