@@ -3,4 +3,3 @@
 \beamer@sectionintoc {3}{Most likely state path/Decoding}{14}{0}{3}
 \beamer@sectionintoc {4}{Continuous-state Hidden Markov Models}{21}{0}{4}
 \beamer@sectionintoc {5}{An example for LGSSM}{35}{0}{5}
-\beamer@sectionintoc {6}{An example for LGSSM}{37}{0}{6}
