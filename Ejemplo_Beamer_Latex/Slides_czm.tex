@@ -1,16 +1,16 @@
 \documentclass[xcolor=dvipsnames, compress]{beamer}
 %\usetheme{Madrid} % My favorite!
-%\usetheme{Boadilla} % Pretty neat, soft color.
+\usetheme{Boadilla} % Pretty neat, soft color.
 %\usetheme{Warsaw}
 %\usecolortheme{dove} 
-\usetheme[secheader]{Boadilla}
+%\usetheme[secheader]{Boadilla}
 % \useoutertheme[subsection=false]{smoothbars}
 % \useinnertheme{rectangles}
 % \usetheme{Marburg}
-   \usecolortheme[RGB={139,10,80}]{structure}
+%   \usecolortheme[RGB={139,10,80}]{structure}
 %  \usecolortheme[RGB={25,25,112}]{structure}
 %\usecolortheme[RGB={255,127,36}]{structure}
-% \usetheme{CambridgeUS}
+%\usetheme{CambridgeUS}
 %\usetheme{PaloAlto}
 % \usefonttheme{professionalfonts}
 % \usepackage{listings}
@@ -127,9 +127,73 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Formulas Marco}
+
+\textbf{Notations:}
+\begin{itemize}
+	\item $p(x_{t+1}|x_t) = P( X_{t+1}= x_{t+1}|X_t = x_t)$
+	\item $p(y_{t}|x_t) = P( Y_{t}= y_{t}|X_t = x_t)$
+	\item $p(x_{t}|y_{1:t}) = P( X_{t}= x_{t}|Y_1 = y_1, \ldots, Y_t = y_t )$
+	\item $p(y_{1:t}) = P(Y_1 = y_1, \ldots, Y_t = y_t )$
+\end{itemize}
+
+\textbf{Inference problems:}
+\begin{itemize}
+	\item $p(x_{t}|y_{1:t})$
+	\item $p(x_{t}|y_{1:s}),$ with $s<t$
+	\item $p(x_{t}|y_{1:s}),$ with $s>t$
+	\item $p(y_{1:T})$
+	\item $arg \max_{x_{0:t}} p(x_{0:T} | y_{1:T})$
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Formulas Marco}
+
+\textbf{Forward Algorithm initialization equation}
+$$ \alpha_{1}(i) = \pi_i \cdot b_{i}(O) $$
+
+\textbf{Forward Algorithm recursion equation}
+$$ \alpha_{t+1}(j) = \sum_{i=1}^N \alpha_t(i) \alpha_{ij} b_{ij}(O) $$
+
+\textbf{Termination}
+$$ P(O|\lambda) = \sum_{i=1}^N \alpha_T(i)$$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Formulas Marco}
+$$ p(x_t|y_{1:t}) = \frac{p(x_t, y_{1:t})}{ \sum_{x_t^\prime \in \mathcal{X}} p(x_t^\prime, y_{1:t}) }$$
+\end{frame}
+
+\begin{frame}
+\frametitle{Formulas Marco}
+\hspace{-0.2cm}
+\begin{eqnarray*}
+	\textcolor{red}{p(x_t,y_{t	:T})} & = & \sum_{x_{t-1} \in \mathcal{X}} p(x_t, x_{t-1}, y_t, y_{1:t-1})\\
+	& = & \sum_{x_t \in \mathcal{X}} p(y_{t}| x_t, x_{t-1}, y_{1:t-1} ) p(x_{t} |x_{t-1},y_{1:t-1}) p(x_{t-1},y_{1:t-1}) \\
+	& = &  p(y_{t}|x_t) \sum_{x_t \in \mathcal{X}} p(x_{t}|x_{t-1}) \textcolor{red}{ p(x_{t-1},y_{1:t-1})}   
+\end{eqnarray*}
+If we define $\alpha(t):= p(x_{t},y_{1:t})$, then we have a forward recursion for $t=1, \ldots, T$, $x_t\in \mathcal{X}$:
+$$ \textcolor{red}{\alpha_{t}(x_{t})} = p(y_{t}|x_t) \sum_{x_t \in \mathcal{X}} p(x_{t}|x_{t-1}) \textcolor{red}{\alpha_{t-1}(x_{t-1})}; \mbox{ } \alpha_0(x_0)=0 $$
+
+\end{frame}
+
+\begin{frame}
+$$p(x_t| y_{1:t}) = \frac{p(x_t, y_{1:t})}{p(y_{1:t})}  = \frac{\alpha_t(x_t)}{ \sum_{x \in \mathcal{X}} \alpha_t(x) }$$
+$$p(y_{1:T}) =  \sum_{x \in \mathcal{X}} \alpha_T(x) $$
+\textbf{Predict}
+$$p(x_t| y_{1:t-1}) = \sum_{x_{t-1} \in \mathcal{X}} p(x_t|x_{t-1}) p(x_{t-1}|y_{1:t-1}) $$
+\textbf{Update}
+$$p(x_t| y_{1:t}) = \frac{g_{x_t}(y_t) p(x_t|y_{1:t})}{\sum_{x_{t}^\prime \in \mathcal{X}} g_{x_t^\prime}(y_t) p(x_t^\prime|y_{1:t})} $$
+\end{frame}
+
+\begin{frame}
 \frametitle{Example: Hidden Mark-frog Chains}
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{images/frog_ladder.jpg}
+	\includegraphics[width=1.0\textwidth]{images/frog_ladder.jpg}
 \end{center}
 
 \end{frame}
@@ -259,7 +323,6 @@ $$p(x_t |y_{1:T}) = \frac{p(x_t , y_{1:t} ) \cdot p(y_{t+1:T} |x_t )}
 \end{eqnarray*}
 We have a backward recursion for $t=T, \ldots, 2$
 $$ \textcolor{red}{\beta_{t-1}(x_{t-1})} = \sum_{x_t \in \mathcal{X}} p(y_{t}|x_t)  p(x_{t}|x_{t-1}) \textcolor{red}{\beta_t(x_t)}, \mbox{ } \beta_T(x_T)=1 $$
-
 \end{frame}
 
 \begin{frame}
