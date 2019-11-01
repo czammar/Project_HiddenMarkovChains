@@ -191,26 +191,9 @@
 \begin{frame}
 \frametitle{Example: Hidden Mark-frog Chains - Filtering pmf}
 \begin{center}
-	\includegraphics[width=0.9\textwidth]{images/frog_filtering.png}
+	\includegraphics[width=1.01\textwidth]{images/frog_filtering.png}
 \end{center}
 \end{frame}
-
-
-\begin{frame}
-\frametitle{Example: Hidden Mark-frog Chains - Smoothing pmf}
-\begin{center}
-	\includegraphics[width=0.9\textwidth]{images/frog_smooth.png}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Example: Hidden Mark-frog Chains - MAP pmf}
-
-	\includegraphics[width=0.9\textwidth]{images/frog_smooth_map.png}
-
-\textbf{Note:} Image shows Smoothing pmf over time $t$ and MAP estimate
-\end{frame}
-
 
 
 %\begin{frame}
@@ -231,7 +214,7 @@
 \textbf{General problem of smoothing:}\\
 \textbf{Given:} observations up to time s (i.e. $y_{1:s}$ known),\\
 \textbf{Problem:} compute $p(x_t | y_{1:s})$ distribution of $X_t$, for $t < s$.
-\vspace{0.5cm}
+\vspace{0.2cm}
 
 A particular case is when we know all history of observations:
 
@@ -255,11 +238,11 @@ This case can be solved using a recursive algorithm \textbf{Forward-backward Smo
 $$p(x_t |y_{1:T}) = \frac{p(x_t , y_{1:t} ) \cdot p(y_{t+1:T} |x_t )}
 	{p(y_{1:T})}$$
 	
-\item $p(y_{1:T})$ is a normalization constant (calculation explained in next section).
+\item $p(y_{1:T})$ normalization constant (calculation explained later).
 	
 \item Algorithm 1 Forward $\alpha$-recursion can estimate $\alpha_t(x_t)=p(x_t , y_{1:t} )$.
 
-\item We can approach HHM structure to generate a recursion rule for $$\beta_t(x_t):=p(y_{t+1:T} |x_t )$$
+\item We can approach HMM structure to generate a recursion rule for $$\beta_t(x_t):=p(y_{t+1:T} |x_t )$$
 
 \end{itemize}
 
@@ -267,14 +250,14 @@ $$p(x_t |y_{1:T}) = \frac{p(x_t , y_{1:t} ) \cdot p(y_{t+1:T} |x_t )}
 
 \begin{frame}
 \frametitle{Forward-backward Smoothing II}
+\hspace{-0.2cm}
 \begin{eqnarray*}
-\textcolor{red}{p(y_{t+1:T} |x_{t-1} )} & = & \sum_{x_t \in \mathcal{X}} p(y_{t+1:T},x_t |x_{t-1} )\\
-                       & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|y_{t+1:T},x_t,x_{t-1} |x_{t-1} ) p(y_{t+1:T},x_t |x_{t-1} ) \\
-     & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|x_{t-1},x_t) p(y_{t+1:T}|x_t)\\
-     & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|x_t) \textcolor{red}{p(y_{t+1:T}|x_t)} p(y_{t}|x_{t-1})\\   
+\textcolor{red}{p(y_{t	:T} |x_{t-1} )} & = & \sum_{x_t \in \mathcal{X}} p(y_{t:T},x_t |x_{t-1} )\\
+                       & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|y_{t+1:T},x_t,x_{t-1}) p(y_{t+1:T},x_t |x_{t-1} ) \\
+     & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|x_{t}) p(y_{t+1:T}|x_t,x_{t-1}) p(x_{t}|x_{t-1}) \\
+     & = & \sum_{x_t \in \mathcal{X}} p(y_{t}|x_t) \textcolor{red}{p(y_{t+1:T}|x_t)} p(x_{t}|x_{t-1}) 
 \end{eqnarray*}
 We have a backward recursion for $t=T, \ldots, 2$
-
 $$ \textcolor{red}{\beta_{t-1}(x_{t-1})} = \sum_{x_t \in \mathcal{X}} p(y_{t}|x_t)  p(x_{t}|x_{t-1}) \textcolor{red}{\beta_t(x_t)}, \mbox{ } \beta_T(x_T)=1 $$
 
 \end{frame}
@@ -290,7 +273,7 @@ If $\mathcal{X}=\{1,\ldots, K\}$:
 \end{frame}
 
 \begin{frame}
-\frametitle{Forward-backward Smoothing III}
+\frametitle{Forward-backward Smoothing IV}
 \textbf{Backward and Forward Algorithm for smoothing:}
 
 \begin{itemize}
@@ -305,7 +288,6 @@ If $\mathcal{X}=\{1,\ldots, K\}$:
  \textbf{Notes:} 1) Algorithms 1 y 2 can be run independently, 2) Backward and Forward Algorithm is from order $\mathcal{O}(T\cdot|\mathcal{X}|^2)$
 
 \end{frame}
-
 
 \begin{frame}
 \section{Likelihood}
@@ -326,6 +308,14 @@ If $\mathcal{X}=\{1,\ldots, K\}$:
 	
 \end{itemize}
 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Example: Hidden Mark-frog Chains - Smoothing pmf}
+\begin{center}
+	\includegraphics[width=1.01\textwidth]{images/frog_smooth.png}
+\end{center}
 \end{frame}
 
 \begin{frame}
@@ -423,7 +413,13 @@ $$ = arg \max_{x_t} \left(\textcolor{red}{m_t(x_{t})} p(y_t|x_t)  p(x_t | \hat{x
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Example: Hidden Mark-frog Chains - MAP pmf}
 
+\includegraphics[width=1.01\textwidth]{images/frog_smooth_map.png}
+
+\textbf{Note:} Image shows Smoothing pmf over time $t$ and MAP estimate
+\end{frame}
 
 \begin{frame}
 \section{Continuous-state Hidden Markov Models}
