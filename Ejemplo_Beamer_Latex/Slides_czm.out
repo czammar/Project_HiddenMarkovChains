@@ -1,5 +1,8 @@
-\BOOKMARK [2][]{Outline0.1}{Smoothing}{}% 1
-\BOOKMARK [2][]{Outline0.2}{Likelihood}{}% 2
-\BOOKMARK [2][]{Outline0.3}{Most likely state path/Decoding}{}% 3
-\BOOKMARK [2][]{Outline0.4}{Continuous-state Hidden Markov Models}{}% 4
-\BOOKMARK [2][]{Outline0.5}{An example for LGSSM}{}% 5
+\BOOKMARK [2][]{Outline0.1}{Motivation }{}% 1
+\BOOKMARK [2][]{Outline0.2}{Markov chains}{}% 2
+\BOOKMARK [2][]{Outline0.3}{Hidden Markov Chains }{}% 3
+\BOOKMARK [2][]{Outline0.4}{Smoothing}{}% 4
+\BOOKMARK [2][]{Outline0.5}{Likelihood}{}% 5
+\BOOKMARK [2][]{Outline0.6}{Most likely state path/Decoding}{}% 6
+\BOOKMARK [2][]{Outline0.7}{Continuous-state Hidden Markov Models}{}% 7
+\BOOKMARK [2][]{Outline0.8}{An example for LGSSM}{}% 8

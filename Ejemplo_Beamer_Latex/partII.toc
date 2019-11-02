@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Motivation }{3}{0}{1}
+\beamer@sectionintoc {2}{Markov chains }{4}{0}{2}
+\beamer@sectionintoc {3}{Markov Chains }{5}{0}{3}
+\beamer@sectionintoc {4}{Hidden Markov Chains }{7}{0}{4}

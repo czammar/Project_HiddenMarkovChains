@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  2 NOV 2019 08:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  2 NOV 2019 06:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Slides_czm.tex
-(./Slides_czm.tex
+**partII.tex
+(./partII.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
@@ -806,6 +806,24 @@ Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
 )
+
+! LaTeX Error: Option clash for package xcolor.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 
+     
+The package xcolor has already been loaded with options:
+  [dvipsnames,]
+There has now been an attempt to load it with options
+  [table, dvipsnames]
+Adding the global options:
+  dvipsnames,,table, dvipsnames
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
 (/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
@@ -850,8 +868,8 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \c@prob=\count178
 \c@comen=\count179
 
-(./Slides_czm.aux)
-\openout1 = `Slides_czm.aux'.
+No file partII.aux.
+\openout1 = `partII.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
 LaTeX Font Info:    ... okay on input line 119.
@@ -867,7 +885,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
 LaTeX Font Info:    ... okay on input line 119.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
 LaTeX Font Info:    ... okay on input line 119.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -947,10 +964,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 119.
 LaTeX Info: Redefining \pageref on input line 119.
 LaTeX Info: Redefining \nameref on input line 119.
-
-(./Slides_czm.out) (./Slides_czm.out)
 \@outlinefile=\write6
-\openout6 = `Slides_czm.out'.
+\openout6 = `partII.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 119.
@@ -1052,293 +1067,430 @@ File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 Package xypdf Info: Line width: 0.43799pt on input line 119.
- (./Slides_czm.nav) [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Slid
-es_czm.toc) [2
+No file partII.nav.
+[1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+No file partII.toc.
+[2
 
 ] [3
 
 ]
-<images/ex1_bag_of_balls.png, id=150, 262.9825pt x 200.75pt>
-File: images/ex1_bag_of_balls.png Graphic file (type png)
-<use images/ex1_bag_of_balls.png>
-Package pdftex.def Info: images/ex1_bag_of_balls.png  used on input line 157.
-(pdftex.def)             Requested size: 65.74545pt x 50.18736pt.
-<images/ex1_bag_of_balls_wrep.png, id=152, 262.9825pt x 200.75pt>
-File: images/ex1_bag_of_balls_wrep.png Graphic file (type png)
-<use images/ex1_bag_of_balls_wrep.png>
-Package pdftex.def Info: images/ex1_bag_of_balls_wrep.png  used on input line 1
-57.
-(pdftex.def)             Requested size: 65.74545pt x 50.18736pt.
- [4
 
- <./images/ex1_bag_of_balls.png> <./images/ex1_bag_of_balls_wrep.png>]
-LaTeX Font Info:    Try loading font information for U+eus on input line 177.
+LaTeX Warning: File `ex1_bag_of_balls.png' not found on input line 156.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
+
+! Package pdftex.def Error: File `ex1_bag_of_balls.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `ex1_bag_of_balls_wrep.png' not found on input line 156.
+
+
+! Package pdftex.def Error: File `ex1_bag_of_balls_wrep.png' not found: using d
+raft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4
+
+]
+LaTeX Font Info:    Try loading font information for U+eus on input line 175.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [5
+)
+! Undefined control sequence.
+\beamer@doifinframe ...\begin {equation*} \mathds 
+                                                  {P}\left (X_{t+1}=x_{t+1}\...
+l.175 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-] [6
+! Undefined control sequence.
+\beamer@doifinframe ..._{0}=x_{0}\right )=\mathds 
+                                                  {P}\left (X_{t+1}=x_{t+1}\...
+l.175 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...quation*} A_{i,j}:=\mathds 
+                                                  {P}\left (X_{t+1}=j\mid X_...
+l.175 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[5
 
 ]
-[7
+! Undefined control sequence.
+\beamer@doifinframe ...quation*} A_{i,j}:=\mathds 
+                                                  {P}\left (X_{t+1}=j\mid X_...
+l.193 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-] [8
+! Undefined control sequence.
+\beamer@doifinframe ...}$, let $\mu _{x0}=\mathds 
+                                                  {P}\left (X_{0}=x_{0}\righ...
+l.193 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-] [9
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...} p\left (x_{0:T}\right ) &
+                                                   :=\mathds {P}\left (X_{0}...
+l.193 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-] [10
+! Undefined control sequence.
+\beamer@doifinframe ..._{0:T}\right ) & :=\mathds 
+                                                  {P}\left (X_{0}=x_{0},\ldo...
+l.193 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-] [11
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.193 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.193 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+\beamer@doifinframe ...x_{t}\right )\\ & =\mathds 
+                                                  {P}\left (X_{0}=x_{0}\righ...
+l.193 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+\beamer@doifinframe ...t )\prod _{t=1}^{T}\mathds 
+                                                  {P}\left (X_{t}=x_{t}\mid ...
+l.193 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.193 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[6
+
+] [7
 
 ]
-<images/m_filtering.png, id=382, 408.52625pt x 287.0725pt>
-File: images/m_filtering.png Graphic file (type png)
-<use images/m_filtering.png>
-Package pdftex.def Info: images/m_filtering.png  used on input line 263.
-(pdftex.def)             Requested size: 154.03183pt x 108.23888pt.
+! Undefined control sequence.
+\beamer@doifinframe ...\begin {equation*} \mathds 
+                                                  {P}\left (Y_{1}=y_{1},\ldo...
+l.221 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ... )=\prod _{t=1}^{T}\mathds 
+                                                  {P}\left (Y_{t}=y_{t}\mid ...
+l.221 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (15.5165pt too wide) detected at line 221
+\OT1/mathkerncmss/m/sl/10.95 P [] \OT1/cmss/m/n/10.95 = [] \OT1/mathkerncmss/m/
+sl/10.95 P []
+ []
+
+! Undefined control sequence.
+\beamer@doifinframe ...uation*} g_{x}(y):=\mathds 
+                                                  {P}\left (Y_{t}=y\mid X_{t...
+l.221 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[8
+
+]
+! Undefined control sequence.
+\beamer@doifinframe ...\begin {equation*} \mathds 
+                                                  {P}\left (X_{0:T}=x_{0:T},...
+l.229 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[9
+
+]
+! Undefined control sequence.
+<recently read> \rowcolor 
+                          
+l.251 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[10
+
+]
+! Undefined control sequence.
+<recently read> \rowcolor 
+                          
+l.289 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[11
+
+]
+<images/sensor.png, id=332, 277.9986pt x 62.1522pt>
+File: images/sensor.png Graphic file (type png)
+<use images/sensor.png>
+Package pdftex.def Info: images/sensor.png  used on input line 325.
+(pdftex.def)             Requested size: 68.45801pt x 15.3047pt.
  [12
 
- <./images/m_filtering.png>]
-<images/m_smooth.png, id=410, 380.42125pt x 296.10625pt>
-File: images/m_smooth.png Graphic file (type png)
-<use images/m_smooth.png>
-Package pdftex.def Info: images/m_smooth.png  used on input line 272.
-(pdftex.def)             Requested size: 154.03183pt x 119.89525pt.
- [13
+ <./images/sensor.png>] [13
 
- <./images/m_smooth.png>]
-<images/m_smooth2.png, id=439, 300.12125pt x 247.92625pt>
-File: images/m_smooth2.png Graphic file (type png)
-<use images/m_smooth2.png>
-Package pdftex.def Info: images/m_smooth2.png  used on input line 281.
-(pdftex.def)             Requested size: 136.91603pt x 113.10547pt.
- [14
+] [14
 
- <./images/m_smooth2.png>]
-<images/m_likelihood.png, id=467, 373.395pt x 183.68625pt>
-File: images/m_likelihood.png Graphic file (type png)
-<use images/m_likelihood.png>
-Package pdftex.def Info: images/m_likelihood.png  used on input line 289.
-(pdftex.def)             Requested size: 205.37926pt x 101.03334pt.
+]
+<images/ex_filtering_marco.png, id=415, 963.6pt x 488.82625pt>
+File: images/ex_filtering_marco.png Graphic file (type png)
+<use images/ex_filtering_marco.png>
+Package pdftex.def Info: images/ex_filtering_marco.png  used on input line 367.
+
+(pdftex.def)             Requested size: 239.60567pt x 121.54987pt.
  [15
 
- <./images/m_likelihood.png>]
-<images/m_decoding.png, id=496, 309.155pt x 400.49625pt>
-File: images/m_decoding.png Graphic file (type png)
-<use images/m_decoding.png>
-Package pdftex.def Info: images/m_decoding.png  used on input line 305.
-(pdftex.def)             Requested size: 119.80283pt x 155.1968pt.
+ <./images/ex_filtering_marco.png>]
+<images/ex_smoothing_marco.png, id=443, 963.6pt x 488.82625pt>
+File: images/ex_smoothing_marco.png Graphic file (type png)
+<use images/ex_smoothing_marco.png>
+Package pdftex.def Info: images/ex_smoothing_marco.png  used on input line 375.
+
+(pdftex.def)             Requested size: 239.60567pt x 121.54987pt.
  [16
 
- <./images/m_decoding.png>]
-<images/frog_ladder.jpg, id=524, 1284.8pt x 718.685pt>
-File: images/frog_ladder.jpg Graphic file (type jpg)
-<use images/frog_ladder.jpg>
-Package pdftex.def Info: images/frog_ladder.jpg  used on input line 313.
-(pdftex.def)             Requested size: 342.2953pt x 191.47047pt.
+ <./images/ex_smoothing_marco.png>]
+<images/ex_decoding_marco.png, id=473, 963.6pt x 488.82625pt>
+File: images/ex_decoding_marco.png Graphic file (type png)
+<use images/ex_decoding_marco.png>
+Package pdftex.def Info: images/ex_decoding_marco.png  used on input line 383.
+(pdftex.def)             Requested size: 239.60567pt x 121.54987pt.
  [17
 
- <./images/frog_ladder.jpg>]
-<images/frog2.png, id=551, 642.4pt x 1099.10625pt>
-File: images/frog2.png Graphic file (type png)
-<use images/frog2.png>
-Package pdftex.def Info: images/frog2.png  used on input line 336.
-(pdftex.def)             Requested size: 71.88242pt x 122.98166pt.
- [18
+ <./images/ex_decoding_marco.png>]
+[18
 
- <./images/frog2.png>]
-[19
+] [19
 
 ] [20
 
 ] [21
 
-]
-<images/sensor.png, id=659, 277.9986pt x 62.1522pt>
-File: images/sensor.png Graphic file (type png)
-<use images/sensor.png>
-Package pdftex.def Info: images/sensor.png  used on input line 464.
-(pdftex.def)             Requested size: 136.91603pt x 30.61131pt.
- [22
-
- <./images/sensor.png>] [23
-
-] [24
-
-] [25
-
-] [26
-
-] [27
-
-] [28
+] [22
 
 ]
-<images/frog_filtering.png, id=847, 987.69pt x 400.49625pt>
-File: images/frog_filtering.png Graphic file (type png)
-<use images/frog_filtering.png>
-Package pdftex.def Info: images/frog_filtering.png  used on input line 579.
-(pdftex.def)             Requested size: 345.71637pt x 140.18188pt.
-
-Overfull \hbox (3.42107pt too wide) in paragraph at lines 579--579
- [] 
- []
-
-[29
-
- <./images/frog_filtering.png>] [30
-
-] [31
-
-] [32
-
-]
-<images/backward_beta_recursion.jpg, id=954, 727.71875pt x 205.76875pt>
-File: images/backward_beta_recursion.jpg Graphic file (type jpg)
-<use images/backward_beta_recursion.jpg>
-Package pdftex.def Info: images/backward_beta_recursion.jpg  used on input line
- 643.
-(pdftex.def)             Requested size: 327.47041pt x 92.59506pt.
- [33
-
- <./images/backward_beta_recursion.jpg>] [34
-
-] [35
-
-]
-<images/frog_smooth.png, id=1034, 962.59625pt x 403.5075pt>
-File: images/frog_smooth.png Graphic file (type png)
-<use images/frog_smooth.png>
-Package pdftex.def Info: images/frog_smooth.png  used on input line 689.
-(pdftex.def)             Requested size: 345.71637pt x 144.91779pt.
-
-Overfull \hbox (3.42107pt too wide) in paragraph at lines 689--689
- [] 
- []
-
-[36
-
- <./images/frog_smooth.png>] [37
-
-]
-<images/viterbi1.jpg, id=1088, 790.955pt x 118.4425pt>
-File: images/viterbi1.jpg Graphic file (type jpg)
-<use images/viterbi1.jpg>
-Package pdftex.def Info: images/viterbi1.jpg  used on input line 731.
-(pdftex.def)             Requested size: 316.3764pt x 47.37614pt.
- [38
-
- <./images/viterbi1.jpg>] [39
-
-] [40
-
-]
-[41
-
-]
-<images/viterbi2.jpg, id=1196, 732.7375pt x 310.15875pt>
-File: images/viterbi2.jpg Graphic file (type jpg)
-<use images/viterbi2.jpg>
-Package pdftex.def Info: images/viterbi2.jpg  used on input line 784.
-(pdftex.def)             Requested size: 329.72884pt x 139.57014pt.
- [42
-
- <./images/viterbi2.jpg>]
-<images/frog_smooth_map.png, id=1224, 965.6075pt x 412.54124pt>
-File: images/frog_smooth_map.png Graphic file (type png)
-<use images/frog_smooth_map.png>
-Package pdftex.def Info: images/frog_smooth_map.png  used on input line 792.
-(pdftex.def)             Requested size: 345.71637pt x 147.7027pt.
-
-Overfull \hbox (3.42107pt too wide) in paragraph at lines 792--792
-[][]  
- []
-
-[43
-
- <./images/frog_smooth_map.png>]
-<gps_cut.png, id=1253, 501.875pt x 345.29pt>
-File: gps_cut.png Graphic file (type png)
-<use gps_cut.png>
-Package pdftex.def Info: gps_cut.png  used on input line 804.
-(pdftex.def)             Requested size: 225.84166pt x 155.37904pt.
- [44
-
- <./gps_cut.png (PNG copy)>] [45
-
-]
-[46
-
-] [47
-
-] [48
-
-] [49
-
-] [50
-
-] [51
-
-] [52
-
-] [53
-
-] [54
-
-] [55
-
-] [56
-
-] [57
-
-] [58
-
-]
-<filtermean_obs.png, id=1651, 464.4853pt x 219.82124pt>
-File: filtermean_obs.png Graphic file (type png)
-<use filtermean_obs.png>
-Package pdftex.def Info: filtermean_obs.png  used on input line 1058.
-(pdftex.def)             Requested size: 325.1375pt x 153.87381pt.
- [59
-
- <./filtermean_obs.png>]
-<smoothmean_obs.png, id=1678, 465.23813pt x 250.68657pt>
-File: smoothmean_obs.png Graphic file (type png)
-<use smoothmean_obs.png>
-Package pdftex.def Info: smoothmean_obs.png  used on input line 1066.
-(pdftex.def)             Requested size: 325.66446pt x 175.47939pt.
- [60
-
- <./smoothmean_obs.png (PNG copy)>]
 \tf@nav=\write7
-\openout7 = `Slides_czm.nav'.
+\openout7 = `partII.nav'.
 
 \tf@toc=\write8
-\openout8 = `Slides_czm.toc'.
+\openout8 = `partII.toc'.
 
 \tf@snm=\write9
-\openout9 = `Slides_czm.snm'.
+\openout9 = `partII.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1148.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1148.
- (./Slides_czm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 538.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 538.
+ (./partII.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 538.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 538.
 
-Package rerunfilecheck Info: File `Slides_czm.out' has not changed.
-(rerunfilecheck)             Checksum: B0FFD5C36BDC6E626A90A75D12469D50;432.
+
+Package rerunfilecheck Warning: File `partII.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `partII.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  0ED1FE01E5602C0C4CCC6A041FFC615C;200.
  ) 
 Here is how much of TeX's memory you used:
- 21169 strings out of 494457
- 385174 string characters out of 6173956
- 506670 words of memory out of 5000000
- 24183 multiletter control sequences out of 15000+600000
- 20382 words of font info for 84 fonts, out of 8000000 for 9000
+ 20803 strings out of 494457
+ 379963 string characters out of 6173956
+ 504220 words of memory out of 5000000
+ 23924 multiletter control sequences out of 15000+600000
+ 18904 words of font info for 78 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 56i,16n,63p,3243b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,59p,3239b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -1352,12 +1504,12 @@ local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
 local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Slides_czm.pdf (60 pages, 902118 bytes).
+/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
+Output written on partII.pdf (22 pages, 644408 bytes).
 PDF statistics:
- 1785 PDF objects out of 2073 (max. 8388607)
- 1643 compressed objects within 17 object streams
- 129 named destinations out of 1000 (max. 500000)
- 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 631 compressed objects within 7 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
