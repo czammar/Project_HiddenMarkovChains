@@ -1,5 +1,5 @@
-\beamer@sectionintoc {1}{Smoothing}{12}{0}{1}
-\beamer@sectionintoc {2}{Likelihood}{17}{0}{2}
-\beamer@sectionintoc {3}{Most likely state path/Decoding}{19}{0}{3}
-\beamer@sectionintoc {4}{Continuous-state Hidden Markov Models}{26}{0}{4}
-\beamer@sectionintoc {5}{An example for LGSSM}{40}{0}{5}
+\beamer@sectionintoc {1}{Smoothing}{17}{0}{1}
+\beamer@sectionintoc {2}{Likelihood}{22}{0}{2}
+\beamer@sectionintoc {3}{Most likely state path/Decoding}{24}{0}{3}
+\beamer@sectionintoc {4}{Continuous-state Hidden Markov Models}{31}{0}{4}
+\beamer@sectionintoc {5}{An example for LGSSM}{45}{0}{5}

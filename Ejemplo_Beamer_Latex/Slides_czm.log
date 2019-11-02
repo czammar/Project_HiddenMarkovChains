@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  1 NOV 2019 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  1 NOV 2019 19:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1059,143 +1059,173 @@ es_czm.toc) [2
 
 ] [3
 
-] [4
-
 ]
-LaTeX Font Info:    Try loading font information for U+eus on input line 169.
+<images/m_filtering.png, id=145, 408.52625pt x 287.0725pt>
+File: images/m_filtering.png Graphic file (type png)
+<use images/m_filtering.png>
+Package pdftex.def Info: images/m_filtering.png  used on input line 152.
+(pdftex.def)             Requested size: 154.03183pt x 108.23888pt.
+ [4
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
+ <./images/m_filtering.png>]
+<images/m_smooth.png, id=175, 380.42125pt x 296.10625pt>
+File: images/m_smooth.png Graphic file (type png)
+<use images/m_smooth.png>
+Package pdftex.def Info: images/m_smooth.png  used on input line 161.
+(pdftex.def)             Requested size: 154.03183pt x 119.89525pt.
+
+[5
+
+ <./images/m_smooth.png>]
+<images/m_smooth2.png, id=203, 300.12125pt x 247.92625pt>
+File: images/m_smooth2.png Graphic file (type png)
+<use images/m_smooth2.png>
+Package pdftex.def Info: images/m_smooth2.png  used on input line 170.
+(pdftex.def)             Requested size: 136.91603pt x 113.10547pt.
+ [6
+
+ <./images/m_smooth2.png>]
+<images/m_likelihood.png, id=231, 373.395pt x 183.68625pt>
+File: images/m_likelihood.png Graphic file (type png)
+<use images/m_likelihood.png>
+Package pdftex.def Info: images/m_likelihood.png  used on input line 178.
+(pdftex.def)             Requested size: 205.37926pt x 101.03334pt.
+ [7
+
+ <./images/m_likelihood.png>]
+LaTeX Font Info:    Try loading font information for U+eus on input line 194.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [5
+)
+<images/m_decoding.png, id=260, 309.155pt x 400.49625pt>
+File: images/m_decoding.png Graphic file (type png)
+<use images/m_decoding.png>
+Package pdftex.def Info: images/m_decoding.png  used on input line 194.
+(pdftex.def)             Requested size: 119.80283pt x 155.1968pt.
 
-] [6
+[8
 
-]
-[7
-
-]
-<images/frog_ladder.jpg, id=247, 1284.8pt x 718.685pt>
+ <./images/m_decoding.png>]
+<images/frog_ladder.jpg, id=290, 1284.8pt x 718.685pt>
 File: images/frog_ladder.jpg Graphic file (type jpg)
 <use images/frog_ladder.jpg>
-Package pdftex.def Info: images/frog_ladder.jpg  used on input line 199.
+Package pdftex.def Info: images/frog_ladder.jpg  used on input line 202.
 (pdftex.def)             Requested size: 342.2953pt x 191.47047pt.
- [8
-
- <./images/frog_ladder.jpg>]
-<images/frog2.png, id=275, 642.4pt x 1099.10625pt>
-File: images/frog2.png Graphic file (type png)
-<use images/frog2.png>
-Package pdftex.def Info: images/frog2.png  used on input line 223.
-(pdftex.def)             Requested size: 71.88242pt x 122.98166pt.
  [9
 
- <./images/frog2.png>] [10
+ <./images/frog_ladder.jpg>]
+<images/frog2.png, id=317, 642.4pt x 1099.10625pt>
+File: images/frog2.png Graphic file (type png)
+<use images/frog2.png>
+Package pdftex.def Info: images/frog2.png  used on input line 225.
+(pdftex.def)             Requested size: 71.88242pt x 122.98166pt.
+ [10
 
-]
-<images/frog_filtering.png, id=331, 987.69pt x 400.49625pt>
-File: images/frog_filtering.png Graphic file (type png)
-<use images/frog_filtering.png>
-Package pdftex.def Info: images/frog_filtering.png  used on input line 260.
-(pdftex.def)             Requested size: 345.71637pt x 140.18188pt.
+ <./images/frog2.png>] [11
 
-Overfull \hbox (3.42107pt too wide) in paragraph at lines 260--260
- [] 
- []
-
-[11
-
- <./images/frog_filtering.png>] [12
+] [12
 
 ] [13
 
 ] [14
 
-]
-<images/backward_beta_recursion.jpg, id=446, 727.71875pt x 205.76875pt>
-File: images/backward_beta_recursion.jpg Graphic file (type jpg)
-<use images/backward_beta_recursion.jpg>
-Package pdftex.def Info: images/backward_beta_recursion.jpg  used on input line
- 336.
-(pdftex.def)             Requested size: 327.47041pt x 92.59506pt.
- [15
-
- <./images/backward_beta_recursion.jpg>] [16
-
-] [17
+] [15
 
 ]
-<images/frog_smooth.png, id=526, 962.59625pt x 403.5075pt>
-File: images/frog_smooth.png Graphic file (type png)
-<use images/frog_smooth.png>
-Package pdftex.def Info: images/frog_smooth.png  used on input line 382.
-(pdftex.def)             Requested size: 345.71637pt x 144.91779pt.
+<images/frog_filtering.png, id=481, 987.69pt x 400.49625pt>
+File: images/frog_filtering.png Graphic file (type png)
+<use images/frog_filtering.png>
+Package pdftex.def Info: images/frog_filtering.png  used on input line 304.
+(pdftex.def)             Requested size: 345.71637pt x 140.18188pt.
 
-Overfull \hbox (3.42107pt too wide) in paragraph at lines 382--382
+Overfull \hbox (3.42107pt too wide) in paragraph at lines 304--304
  [] 
  []
 
-[18
+[16
 
- <./images/frog_smooth.png>] [19
+ <./images/frog_filtering.png>] [17
+
+] [18
+
+] [19
 
 ]
-<images/viterbi1.jpg, id=581, 790.955pt x 118.4425pt>
-File: images/viterbi1.jpg Graphic file (type jpg)
-<use images/viterbi1.jpg>
-Package pdftex.def Info: images/viterbi1.jpg  used on input line 424.
-(pdftex.def)             Requested size: 316.3764pt x 47.37614pt.
+<images/backward_beta_recursion.jpg, id=588, 727.71875pt x 205.76875pt>
+File: images/backward_beta_recursion.jpg Graphic file (type jpg)
+<use images/backward_beta_recursion.jpg>
+Package pdftex.def Info: images/backward_beta_recursion.jpg  used on input line
+ 380.
+(pdftex.def)             Requested size: 327.47041pt x 92.59506pt.
  [20
 
- <./images/viterbi1.jpg>] [21
+ <./images/backward_beta_recursion.jpg>] [21
 
 ] [22
 
 ]
-[23
+<images/frog_smooth.png, id=668, 962.59625pt x 403.5075pt>
+File: images/frog_smooth.png Graphic file (type png)
+<use images/frog_smooth.png>
+Package pdftex.def Info: images/frog_smooth.png  used on input line 426.
+(pdftex.def)             Requested size: 345.71637pt x 144.91779pt.
 
-]
-<images/viterbi2.jpg, id=689, 732.7375pt x 310.15875pt>
-File: images/viterbi2.jpg Graphic file (type jpg)
-<use images/viterbi2.jpg>
-Package pdftex.def Info: images/viterbi2.jpg  used on input line 477.
-(pdftex.def)             Requested size: 329.72884pt x 139.57014pt.
- [24
-
- <./images/viterbi2.jpg>]
-<images/frog_smooth_map.png, id=717, 965.6075pt x 412.54124pt>
-File: images/frog_smooth_map.png Graphic file (type png)
-<use images/frog_smooth_map.png>
-Package pdftex.def Info: images/frog_smooth_map.png  used on input line 485.
-(pdftex.def)             Requested size: 345.71637pt x 147.7027pt.
-
-Overfull \hbox (3.42107pt too wide) in paragraph at lines 485--485
-[][]  
+Overfull \hbox (3.42107pt too wide) in paragraph at lines 426--426
+ [] 
  []
 
-[25
+[23
 
- <./images/frog_smooth_map.png>]
-<gps_cut.png, id=745, 501.875pt x 345.29pt>
-File: gps_cut.png Graphic file (type png)
-<use gps_cut.png>
-Package pdftex.def Info: gps_cut.png  used on input line 497.
-(pdftex.def)             Requested size: 225.84166pt x 155.37904pt.
- [26
+ <./images/frog_smooth.png>] [24
 
- <./gps_cut.png (PNG copy)>] [27
+]
+<images/viterbi1.jpg, id=722, 790.955pt x 118.4425pt>
+File: images/viterbi1.jpg Graphic file (type jpg)
+<use images/viterbi1.jpg>
+Package pdftex.def Info: images/viterbi1.jpg  used on input line 468.
+(pdftex.def)             Requested size: 316.3764pt x 47.37614pt.
+ [25
+
+ <./images/viterbi1.jpg>] [26
+
+] [27
 
 ]
 [28
 
-] [29
+]
+<images/viterbi2.jpg, id=831, 732.7375pt x 310.15875pt>
+File: images/viterbi2.jpg Graphic file (type jpg)
+<use images/viterbi2.jpg>
+Package pdftex.def Info: images/viterbi2.jpg  used on input line 521.
+(pdftex.def)             Requested size: 329.72884pt x 139.57014pt.
+ [29
 
-] [30
+ <./images/viterbi2.jpg>]
+<images/frog_smooth_map.png, id=859, 965.6075pt x 412.54124pt>
+File: images/frog_smooth_map.png Graphic file (type png)
+<use images/frog_smooth_map.png>
+Package pdftex.def Info: images/frog_smooth_map.png  used on input line 529.
+(pdftex.def)             Requested size: 345.71637pt x 147.7027pt.
 
-] [31
+Overfull \hbox (3.42107pt too wide) in paragraph at lines 529--529
+[][]  
+ []
 
-] [32
+[30
 
-] [33
+ <./images/frog_smooth_map.png>]
+<gps_cut.png, id=886, 501.875pt x 345.29pt>
+File: gps_cut.png Graphic file (type png)
+<use gps_cut.png>
+Package pdftex.def Info: gps_cut.png  used on input line 541.
+(pdftex.def)             Requested size: 225.84166pt x 155.37904pt.
+ [31
+
+ <./gps_cut.png (PNG copy)>] [32
+
+]
+[33
 
 ] [34
 
@@ -1211,21 +1241,31 @@ Package pdftex.def Info: gps_cut.png  used on input line 497.
 
 ] [40
 
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
 ]
-<filtermean_obs.png, id=1145, 464.4853pt x 219.82124pt>
+<filtermean_obs.png, id=1287, 464.4853pt x 219.82124pt>
 File: filtermean_obs.png Graphic file (type png)
 <use filtermean_obs.png>
-Package pdftex.def Info: filtermean_obs.png  used on input line 751.
+Package pdftex.def Info: filtermean_obs.png  used on input line 795.
 (pdftex.def)             Requested size: 325.1375pt x 153.87381pt.
- [41
+ [46
 
  <./filtermean_obs.png>]
-<smoothmean_obs.png, id=1171, 465.23813pt x 250.68657pt>
+<smoothmean_obs.png, id=1313, 465.23813pt x 250.68657pt>
 File: smoothmean_obs.png Graphic file (type png)
 <use smoothmean_obs.png>
-Package pdftex.def Info: smoothmean_obs.png  used on input line 759.
+Package pdftex.def Info: smoothmean_obs.png  used on input line 803.
 (pdftex.def)             Requested size: 325.66446pt x 175.47939pt.
- [42
+ [47
 
  <./smoothmean_obs.png (PNG copy)>]
 \tf@nav=\write7
@@ -1237,19 +1277,19 @@ Package pdftex.def Info: smoothmean_obs.png  used on input line 759.
 \tf@snm=\write9
 \openout9 = `Slides_czm.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 841.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 841.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 885.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 885.
  (./Slides_czm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 841.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 841.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 885.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 885.
 Package rerunfilecheck Info: File `Slides_czm.out' has not changed.
 (rerunfilecheck)             Checksum: CBFAAF9A0FE17C2DF4244E3E9DC81CE0;282.
  ) 
 Here is how much of TeX's memory you used:
- 21038 strings out of 494457
- 383302 string characters out of 6173956
- 506337 words of memory out of 5000000
- 24099 multiletter control sequences out of 15000+600000
+ 21083 strings out of 494457
+ 384072 string characters out of 6173956
+ 507337 words of memory out of 5000000
+ 24129 multiletter control sequences out of 15000+600000
  20382 words of font info for 84 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  56i,16n,63p,3243b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1268,10 +1308,10 @@ ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
 /texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Slides_czm.pdf (42 pages, 692220 bytes).
+Output written on Slides_czm.pdf (47 pages, 795262 bytes).
 PDF statistics:
- 1270 PDF objects out of 1440 (max. 8388607)
- 1167 compressed objects within 12 object streams
- 90 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1414 PDF objects out of 1440 (max. 8388607)
+ 1295 compressed objects within 13 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
