@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  2 NOV 2019 08:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  2 NOV 2019 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1334,7 +1334,7 @@ Package rerunfilecheck Info: File `Slides_czm.out' has not changed.
 Here is how much of TeX's memory you used:
  21169 strings out of 494457
  385174 string characters out of 6173956
- 506670 words of memory out of 5000000
+ 507670 words of memory out of 5000000
  24183 multiletter control sequences out of 15000+600000
  20382 words of font info for 84 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
@@ -1354,7 +1354,7 @@ ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
 /texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Slides_czm.pdf (60 pages, 902118 bytes).
+Output written on Slides_czm.pdf (60 pages, 902127 bytes).
 PDF statistics:
  1785 PDF objects out of 2073 (max. 8388607)
  1643 compressed objects within 17 object streams
