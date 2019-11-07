@@ -809,6 +809,45 @@ In many problems often hidden parameters of interest are continuous.
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Recap: Linear Gaussian system I}
+Let $(X,Y) \in \R^{d_x} \times \R^{d_y}$ jointly Gaussian vector with mean vector and covariance matrix: $$ \mu = \left(\begin{matrix}\mu_x\\\mu_x\end{matrix}\right) \quad \Sigma = \left(\begin{matrix}\Sigma_{xx} & \Sigma_{xy} \\ \Sigma_{yx} & \Sigma_{yy} \end{matrix}\right)  $$
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		\textbf{Marginals with respect to }$X$ \textbf{and} $Y$ \textbf{are Gaussians:}
+		$$X \sim  \mathcal{N}(\mu_x, \Sigma_{xx}) $$
+		$$Y \sim  \mathcal{N}(\mu_y, \Sigma_{yy})$$
+		
+	\end{column}
+	\begin{column}{0.5\textwidth}  %%<--- here
+		\textbf{Conditional of }$X$ \textbf{with respect } $Y$ \textbf{is Gaussian:}
+		$$(X|Y = y) \sim  \mathcal{N}(\mu_{x|y}, \Sigma_{x|y})$$
+		$$ \Sigma_{x|y} = \Sigma_{xx} - \Sigma_{xy} \Sigma_{xy}^{-1} \Sigma_{y|x}$$
+		$$ \mu_{x|y} = \mu_{x} - \Sigma_{xy} \Sigma_{xy}^{-1} (y-\mu_y)$$
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Recap: Linear Gaussian system II}
+Let $X \in \R^{d_x}, Y \in \R^{d_y}$ Gaussian r.v. with $$ X \sim \mathcal{N}(\mu_x, \Sigma_{xx})  \quad  Y|X=x \sim \mathcal{N}(Ax+b, \Sigma_{y|x})  $$
+$$\mu_x \in \R^{d_x}, \Sigma_{xx} \in \R^{d_x \times d_x}, A \in \R^{d_y \times d_x}, b \in \R^{d_y},  \Sigma_{y|x} \in \R^{d_y \times d_y}$$
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		\textbf{Conditional of X with respect to Y and marginal distribution are given by:}
+		$$(X|Y=y) \sim  \mathcal{N}(\mu_{x|y}, \Sigma_{x|y}) $$
+		$$Y \sim  \mathcal{N}(\mu_y, \Sigma_{yy})$$
+		
+	\end{column}
+	\begin{column}{0.5\textwidth}  %%<--- here
+		$$\mu_y = A \mu_x + b$$
+		$$ \Sigma_{yy} = \Sigma_{y|x} - A \Sigma_{xy}A$$
+		$$ \Sigma_{x|y} = (\Sigma_{xx}^{-1} - A^T \Sigma_{y|x}^{-1}A)^{-1}$$
+		$$ \mu_{x|y} = \Sigma_{x|y} (\Sigma_{xx}^{-1} \mu_x + A^T \Sigma_{y|x}^{-1} (y-b)$$
+	\end{column}
+\end{columns}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Linear Gaussian state-space model (LGSSM)}
@@ -1070,6 +1109,7 @@ Where
 \end{itemize}
 	
 \end{frame}
+
 
 %
 %\begin{frame}[fragile] % Notice the [fragile] option %

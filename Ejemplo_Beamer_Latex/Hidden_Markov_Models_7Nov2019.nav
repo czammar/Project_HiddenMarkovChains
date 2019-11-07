@@ -133,22 +133,26 @@
 \headcommand {\beamer@framepages {56}{56}}
 \headcommand {\slideentry {7}{0}{13}{57/57}{}{0}}
 \headcommand {\beamer@framepages {57}{57}}
-\headcommand {\beamer@sectionpages {1}{57}}
-\headcommand {\beamer@subsectionpages {1}{57}}
-\headcommand {\sectionentry {8}{An example for LGSSM}{58}{An example for LGSSM}{0}}
-\headcommand {\slideentry {8}{0}{0}{58/58}{}{0}}
+\headcommand {\slideentry {7}{0}{14}{58/58}{}{0}}
 \headcommand {\beamer@framepages {58}{58}}
-\headcommand {\slideentry {8}{0}{1}{59/59}{}{0}}
+\headcommand {\slideentry {7}{0}{15}{59/59}{}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\slideentry {8}{0}{2}{60/60}{}{0}}
+\headcommand {\beamer@sectionpages {1}{59}}
+\headcommand {\beamer@subsectionpages {1}{59}}
+\headcommand {\sectionentry {8}{An example for LGSSM}{60}{An example for LGSSM}{0}}
+\headcommand {\slideentry {8}{0}{0}{60/60}{}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\beamer@sectionpages {1}{60}}
-\headcommand {\beamer@subsectionpages {1}{60}}
-\headcommand {\sectionentry {9}{References}{61}{References}{0}}
-\headcommand {\slideentry {9}{0}{0}{61/61}{}{0}}
+\headcommand {\slideentry {8}{0}{1}{61/61}{}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\beamer@partpages {1}{61}}
-\headcommand {\beamer@subsectionpages {1}{61}}
-\headcommand {\beamer@sectionpages {1}{61}}
-\headcommand {\beamer@documentpages {61}}
-\headcommand {\gdef \inserttotalframenumber {61}}
+\headcommand {\slideentry {8}{0}{2}{62/62}{}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\beamer@sectionpages {1}{62}}
+\headcommand {\beamer@subsectionpages {1}{62}}
+\headcommand {\sectionentry {9}{References}{63}{References}{0}}
+\headcommand {\slideentry {9}{0}{0}{63/63}{}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\beamer@partpages {1}{63}}
+\headcommand {\beamer@subsectionpages {1}{63}}
+\headcommand {\beamer@sectionpages {1}{63}}
+\headcommand {\beamer@documentpages {63}}
+\headcommand {\gdef \inserttotalframenumber {63}}
