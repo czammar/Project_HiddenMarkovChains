@@ -1,0 +1,9 @@
+\beamer@sectionintoc {1}{Motivation }{3}{0}{1}
+\beamer@sectionintoc {2}{Markov chains}{4}{0}{2}
+\beamer@sectionintoc {3}{Hidden Markov Chains }{7}{0}{3}
+\beamer@sectionintoc {4}{Smoothing}{30}{0}{4}
+\beamer@sectionintoc {5}{Likelihood}{35}{0}{5}
+\beamer@sectionintoc {6}{Most likely state path/Decoding}{37}{0}{6}
+\beamer@sectionintoc {7}{Continuous-state Hidden Markov Models}{44}{0}{7}
+\beamer@sectionintoc {8}{An example for LGSSM}{58}{0}{8}
+\beamer@sectionintoc {9}{References}{61}{0}{9}
