@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  7 NOV 2019 09:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  7 NOV 2019 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1314,14 +1314,10 @@ Package pdftex.def Info: Rplot02.png  used on input line 1092.
 File: Rplot03.png Graphic file (type png)
 <use Rplot03.png>
 Package pdftex.def Info: Rplot03.png  used on input line 1100.
-(pdftex.def)             Requested size: 374.14525pt x 192.34227pt.
+(pdftex.def)             Requested size: 347.41884pt x 178.60263pt.
 
-Overfull \hbox (31.84995pt too wide) in paragraph at lines 1100--1100
+Overfull \hbox (5.12354pt too wide) in paragraph at lines 1100--1100
  [] 
- []
-
-
-Overfull \vbox (6.88023pt too high) detected at line 1100
  []
 
 [62
@@ -1378,7 +1374,7 @@ al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local
 /texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
 texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/loca
 l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Hidden_Markov_Models_7Nov2019.pdf (63 pages, 933510 bytes).
+Output written on Hidden_Markov_Models_7Nov2019.pdf (63 pages, 933506 bytes).
 PDF statistics:
  1882 PDF objects out of 2073 (max. 8388607)
  1735 compressed objects within 18 object streams
