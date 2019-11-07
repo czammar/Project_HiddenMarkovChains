@@ -7,7 +7,6 @@ kalman<-function(y, F, G, Q, H, R, mu0, Sigma0){
   I = diag(dx)
   
   ## INITIALIZATION ##
-  
   mu.p = matrix(0, nrow = dx, ncol = T0)
   Sigma.p = array(0, c(dx, dx, T0))
   mu.f = matrix(0, nrow = dx, ncol = T0)
@@ -71,16 +70,15 @@ mu.s = results.KF$mu.s
 Sigma.s = results.KF$Sigma.s
 
 # Find multiplier for 99% CI
-z.val <- qnorm(1 - (1 - 0.9999)/2)
-z.val
+z.val <- qnorm(1 - (1 - 0.99)/2)
 
 # aux variables to plot CIs
-LoCI_f <- mu.f - z.val * Sigma.f[1,1,]
-HiCI_f <- mu.f + z.val * Sigma.f[1,1,]
-LoCI_s <- mu.s - z.val * Sigma.s[1,1,]
-HiCI_s <- mu.s + z.val * Sigma.s[1,1,]
-LoCI_p <- mu.p - z.val * Sigma.p[1,1,]
-HiCI_p <- mu.p + z.val * Sigma.p[1,1,]
+LoCI_f <- mu.f - z.val * sqrt(Sigma.f[1,1,])
+HiCI_f <- mu.f + z.val * sqrt(Sigma.f[1,1,])
+LoCI_s <- mu.s - z.val * sqrt(Sigma.s[1,1,])
+HiCI_s <- mu.s + z.val * sqrt(Sigma.s[1,1,])
+LoCI_p <- mu.p - z.val * sqrt(Sigma.p[1,1,])
+HiCI_p <- mu.p + z.val * sqrt(Sigma.p[1,1,])
 
 # 
 data_toplot <- tibble(x[1,],y[1,],mu.f[1,],LoCI_f[1,],HiCI_f[1,],mu.s[1,],LoCI_s[1,],HiCI_s[1,],mu.p[1,],LoCI_p[1,],HiCI_p[1,])
