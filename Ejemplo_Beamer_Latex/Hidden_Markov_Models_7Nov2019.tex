@@ -495,6 +495,9 @@ $$ \alpha_{t}(j) = b_{ij}(O) \sum_{i=1}^N A_{ij} \cdot \alpha_{t-1}(i)  $$
 
 \textbf{Termination}
 $$ P(O|\lambda) = \sum_{i=1}^N \alpha_T(i)$$
+
+\textbf{Note:} please, see pdf file \emph{"Hidden\_Markov\_Models\_7Nov2019\_AnexA"}
+
 \end{frame}
 %
 
@@ -518,7 +521,7 @@ We will derive a recursion for:
 \end{eqnarray*}
 
 If we define $\alpha(t):= p(x_{t},y_{1:t})$, then we have a forward recursion for $t=1, \ldots, T$, $x_t\in \mathcal{X}$:
-$$ \textcolor{red}{\alpha_{t}(x_{t})} = p(y_{t}|x_t) \sum_{x_t \in \mathcal{X}} p(x_{t}|x_{t-1}) \textcolor{red}{\alpha_{t-1}(x_{t-1})}; \mbox{ } \alpha_0(x_0)=0 $$
+$$ \textcolor{red}{\alpha_{t}(x_{t})} = p(y_{t}|x_t) \sum_{x_t \in \mathcal{X}} p(x_{t}|x_{t-1}) \textcolor{red}{\alpha_{t-1}(x_{t-1})}; \mbox{ } \alpha_0(x_0)=p(x_0) $$
 \end{frame}
 %
 %% Marco diap 20
